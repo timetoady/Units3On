@@ -1,0 +1,88 @@
+//Header settings
+
+figure{
+    margin: 0,
+}
+
+figure img {
+    border: 3px solid black;   
+}
+
+header {
+    padding: .3rem 0 .1rem .3rem;
+    display: grid;
+    background-color: $primaryBackground;
+    grid-template-columns: 110px auto;
+}
+
+header h1{
+    font-size: 2.2rem;
+    font-family: $fontFamily2;
+    margin: 0;
+}
+
+header h2{
+    margin: 0;
+    font-size: 1rem;
+    font-family: $fontFamily
+}
+
+//Navigation settings
+
+nav{
+    background-color: $navColor;
+    font-family: $fontFamily;
+
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: $gutter
+
+}
+
+nav li{
+    list-style-type: none;
+    text-decoration: none;
+    min-width: 25%;
+    font-size: .8rem;
+    
+    
+}
+
+nav a {
+    display: block;
+    padding: .5rem 0;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    justify-content: space-around;
+}
+
+nav li:hover {
+    background-color: lighten($navColor, 30%)
+}
+
+.active{
+    background-color: darken($navColor, 8%)
+}
+
+//Main section settings
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+main div{
+    max-width: 48%;
+}
+
+//footer settings
+
+footer {
+    background-color: $primaryBackground;
+    text-align: center;
+    padding: .5rem 2%; }
