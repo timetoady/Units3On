@@ -8,3 +8,15 @@ div.gallery figure {
   margin: .6rem;
 
 }
+
+header {
+  grid-template-columns: 110px auto;
+}
+
+header h1 {
+  font-size: 3.2rem;
+}
+
+header h2{
+  font-size: 1.6rem;
+}

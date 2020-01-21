@@ -12,17 +12,22 @@ header {
     padding: .3rem 0 .1rem .3rem;
     display: grid;
     background-color: $primaryBackground;
-    grid-template-columns: 110px auto;
+    grid-template-columns: 70px auto;
+}
+
+header img {
+    width: 100%;
+    border: 2px black solid;
 }
 
 header h1 {
     font-size: 2.2rem;
     font-family: $fontFamily2;
-    margin: 0;
+    margin: 0 0 0 .3rem;
 }
 
 header h2 {
-    margin: 0;
+    margin: 0 0 0 .4rem;
     font-size: 1rem;
     font-family: $fontFamily
 }
@@ -86,6 +91,11 @@ div.gallery figure {
 
 div.gallery figure img {
     width: 100%;
+}
+
+div.gallery figure figcaption {
+    font-family: $fontFamily;
+    font-weight: bold;
 }
 
 //footer settings
