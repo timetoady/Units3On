@@ -2,3 +2,11 @@ header, nav, body, footer{
     max-width: 71.25rem;
     margin: 0 auto;
 }
+
+div.gallery figure {
+    flex-basis: 23.31%;
+  }
+
+div.gallery{
+    width: 100%;
+}
