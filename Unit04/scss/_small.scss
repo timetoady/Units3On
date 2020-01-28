@@ -1,0 +1,122 @@
+//Header settings
+
+figure {
+    margin: 0,
+}
+
+figure img {
+    border: 3px solid black;
+}
+
+header {
+    padding: .5rem;
+    color: aliceblue;
+}
+
+div#headerWrapper {
+    background-image: url("/Unit04/images/headerSmall.jpg");
+}
+
+header h1 {
+    font-size: 2.2rem;
+    font-family: $fontFamily2;
+    margin: 0 0 0 .3rem;
+}
+
+header h2 {
+    margin: 0 0 0 .4rem;
+    font-size: .7rem;
+    font-family: $fontFamily
+}
+
+//Navigation settings
+
+nav {
+    font-family: $fontFamily2;
+}
+
+div#navWrapper {
+    background-color: $navColor;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: $gutter;
+}
+
+nav li {
+    list-style-type: none;
+    text-decoration: none;
+    min-width: 25%;
+    font-size: .8rem;
+}
+
+nav a {
+    display: block;
+    padding: .5rem 0;
+    color: aliceblue;
+    text-align: center;
+    text-decoration: none;
+    justify-content: space-around;
+}
+
+nav li:hover {
+    background-color: lighten($navColor, 15%)
+}
+
+.active {
+    background-color: darken($navColor, 10%)
+}
+
+//Main and animation settings
+main h1,
+h2 {
+    margin: 1rem 0 0 2%;
+    font-family: $fontFamily;
+}
+
+main {
+    #test p {
+        width: 9%;
+        margin-left: 2%;
+        position: relative;
+        animation: myanime 4s ease-in-out 2s 1;
+    }
+
+    @keyframes myanime {
+        0% {
+            background-color: white;
+            left: 0px;
+            transform: scaleX(1);
+        }
+
+        50% {
+            background-color: $primaryBackground;
+            color: aliceblue;
+            rotate: auto 1s;
+            left: 80%;
+            transform: scaleX(3);
+    
+        }
+
+        100% {
+            background-color: white;
+            left: 0px;
+            transform: scaleX(1);
+        }
+    }
+}
+
+//Footer settings
+
+div#footerWrapper {
+    background-color: $primaryBackground;
+}
+
+footer {
+    text-align: center;
+    padding: .8rem 2% .5rem, 2%;
+    color: aliceblue;
+}
