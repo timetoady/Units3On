@@ -1,0 +1,143 @@
+//Header settings
+
+header {
+    padding: .5rem;
+    color: $primaryColor;
+    display: flex;
+    background-color: rgb(117, 6, 6);
+}
+
+header h1 {
+    font-size: 2rem;
+    font-family: $fontFamily2;
+    margin: 3rem 0 0 0;
+}
+
+header h2 {
+    margin: 0;
+    font-size: .9rem;
+    font-family: $fontFamily
+}
+
+header figure img {
+    border-radius: 30px;
+    min-width: 100px;
+    border: 3px black solid;
+}
+
+//Navigation settings
+
+nav {
+    font-family: $fontFamily2;
+    background-color: $navColor;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    list-style-type: none;
+    text-decoration: none;
+    min-width: 25%;
+    font-size: .8rem;
+    padding: .4rem 0 .4rem 0;
+}
+
+nav a {
+    display: block;
+    padding: .5rem 0;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    justify-content: space-around;
+}
+
+nav li:hover {
+    background-color: rgb(223, 41, 9);
+}
+
+.active {
+    background-color: darken($navColor, 10%)
+}
+
+//Main and shape settings
+body{
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+main h1,
+h2, p {
+    margin: 1rem 0 0 2%;
+    font-family: $fontFamily;
+    
+}
+
+figure {
+    margin: 0;
+}
+
+.shapeBox img{
+    max-width: 50%;
+    float: right;  
+    margin: .5rem; 
+}
+
+#circle img {
+    clip-path: circle(50%);
+    shape-outside: circle(50%);
+}
+
+#equalTri img {
+    clip-path: polygon(0 87%, 50% 0, 50% 0, 100% 87%);
+    shape-outside: polygon(0 87%, 50% 0, 50% 0, 100% 87%);
+}
+
+#rightTri img{
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    shape-outside: polygon(0 0, 100% 0, 100% 100%);
+}
+
+#quarterCir img{
+    clip-path: circle(100% at 100% 0);
+    shape-outside: circle(100% at 100% 0);
+}
+
+.clearFix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+  //Lazy load settings
+
+.gallery figure {
+    width: 100%;
+    height: 0;
+    padding-bottom: 60%; /* You define this doing image height / width * 100% */
+    position: relative;
+    margin: 0;
+}
+.gallery figure img {
+    width: 98%;
+    margin-left: 1%;
+    height: auto;
+    position: absolute;
+}
+
+//Footer settings
+
+div#footerWrapper {
+    background-color: $primaryBackground;
+    margin-top: 1%;
+}
+
+footer {
+    text-align: center;
+    padding: .8rem 2% .5rem 2%;
+    color: aliceblue;
+}
