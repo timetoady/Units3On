@@ -1,0 +1,209 @@
+//Header settings
+
+header {
+    padding: .5rem;
+    color: black;
+    display: flex;
+
+}
+
+div#headWrapper {
+    background: rgb(246, 248, 249);
+    // display: flex;
+    
+}
+
+#headWrapper input {
+    max-width: 30vw;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-family: $fontFamily2;
+    margin: .2rem 0 0 0;
+}
+
+header h2 {
+    margin: 0;
+    font-size: .8rem;
+    font-family: $fontFamily
+}
+
+
+//Navigation settings
+
+nav {
+    font-family: $fontFamily2;
+    color: black;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#feffff+0,ddf1f9+35,a0d8ef+100;Blue+3D+%2318 */
+    background: rgb(254, 255, 255);
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(254, 255, 255, 1) 0%, rgba(221, 241, 249, 1) 35%, rgba(160, 216, 239, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(254, 255, 255, 1) 0%, rgba(221, 241, 249, 1) 35%, rgba(160, 216, 239, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(254, 255, 255, 1) 0%, rgba(221, 241, 249, 1) 35%, rgba(160, 216, 239, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#feffff', endColorstr='#a0d8ef', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: .8rem;
+    padding: .2rem .6rem;
+}
+
+nav a {
+    display: block;
+    padding: .5rem 0;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    justify-content: space-around;
+}
+
+nav a:hover {
+    transition: ease-in .3s;
+    color: white;
+}
+
+nav li:hover {
+    transition: ease-in .3s;
+    background-color: rgb(70, 112, 226);
+
+}
+
+.active {
+    background-color: darken($navColor, 10%)
+}
+
+//Main settings
+body {
+    background-color: rgb(109, 109, 109);
+    margin: 0;
+    padding-top: .5rem;
+}
+
+main {
+    background-color: white;
+    color: black;
+    margin: 0;
+}
+
+main h1,
+h2,
+p {
+    margin: 0;
+    font-family: $fontFamily;
+}
+
+.clearFix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+//Column settings
+
+
+.flexed {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexed h3 {
+    font-size: 1rem;
+}
+
+.lawyer {
+    text-align: center;
+    // border: 1px solid gray;
+    box-shadow: 1px 1px 3px  #888888;
+    margin: .4rem $gutter;
+}
+
+.lawyerButton{
+    margin: 1rem;
+    background-color: black;
+    color: white;
+    padding: .4rem 0rem;
+    width: 81%;
+    border-radius: .5rem;
+    border: none;
+    font-size: .7rem;
+}
+
+.bigButton{
+    margin: .5rem;
+    background-color: black;
+    color: white;
+    padding: 1rem 0rem;
+    width: 90%;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    
+}
+
+.buttons {
+    text-align: center;
+    margin: .4rem 2vw;
+}
+
+
+img {
+    width: 100%;
+    margin: 0;
+}
+
+.column {
+    padding: 0;
+    margin: .4rem 1vw;
+}
+
+.readMore div {
+    margin-top: 1rem;
+}
+
+.readMore a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+@for $i from 1 through 12 {
+    $w: ($i / 12) * 96%;
+
+    .small-#{$i} {
+        flex-basis: $w;
+    }
+}
+
+@for $i from 1 through 12 {
+    $w: ($i / 12) * 100%;
+
+    .small2-#{$i} {
+        flex-basis: $w;
+    }
+}
+
+//Footer settings
+
+div#footerWrapper {
+    background-color: black;
+
+}
+
+footer {
+    text-align: center;
+    padding: .8rem 2% .5rem 2%;
+    color: aliceblue;
+}

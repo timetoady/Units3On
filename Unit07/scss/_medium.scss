@@ -1,0 +1,53 @@
+nav li {
+  // 
+  font-size: 1.2rem;
+}
+
+header h1 {
+  font-size: 2rem;
+
+}
+
+header h2 {
+  font-size: 1rem;
+}
+
+body {
+  padding-top: .5rem;
+}
+
+.lawyer{
+  margin: .4rem .5vw;
+}
+
+.buttons {
+  margin: .4rem 0;
+}
+
+.bigButton{ 
+  font-size: 1rem;
+  padding: 2rem 0rem;
+  margin: 2rem 0;
+  width: 98%;
+
+}
+
+div.column{
+  max-width: 48%;
+}
+
+@for $i from 1 through 12 {
+  $w: ($i / 12) * 96%;
+
+  .medium-#{$i} {
+    flex-basis: $w;
+  }
+}
+
+@for $i from 1 through 12 {
+  $w: ($i / 12) * 100%;
+
+  .medium2-#{$i} {
+    flex-basis: $w;
+  }
+}

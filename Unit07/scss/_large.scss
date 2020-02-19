@@ -1,0 +1,70 @@
+nav,
+main,
+header,
+footer {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+header {
+    background-size: cover;
+}
+
+#footerWrapper {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+body {
+    padding-top: .5rem;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin: 5rem 0 0 1rem;
+}
+
+header h2 {
+    font-size: 1.2rem;
+    margin: 0 0 .5rem 1rem;
+}
+
+nav li {
+    min-width: 6rem;
+}
+
+
+.lawyer h3 {
+    font-size: 1.3rem;
+}
+
+.lawyerButton{
+    font-size: .75rem;
+    padding: .7rem .1rem;
+}
+
+.buttons {
+    margin: .4rem 0;
+  }
+
+  .column {
+    padding: 0;
+    margin: .4rem .35vw;
+}
+
+
+@for $i from 1 through 12 {
+    $w: ($i / 12) * 95.5%;
+
+    .large-#{$i} {
+        flex-basis: $w;
+    }
+}
+
+@for $i from 1 through 12 {
+    $w: ($i / 12) * 100%;
+
+    .large2-#{$i} {
+        flex-basis: $w;
+    }
+}
