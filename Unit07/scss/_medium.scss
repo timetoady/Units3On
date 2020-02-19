@@ -6,7 +6,7 @@ nav{
 nav li {
   // 
   font-size: 1.3rem;
-  padding: 1rem;
+  padding: .5rem;
 }
 
 nav ul {
@@ -17,6 +17,7 @@ nav ul {
 
 nav a{
   padding: 0;
+  display:block;
 }
 
 nav a:hover {
@@ -93,7 +94,7 @@ div.column{
 }
 
 .readMore {
-  background-color: rgb(85, 85, 85) !important;
+  background-color: rgb(121, 121, 121) !important;
   text-align: center;
   padding: .8rem 0;
 }
@@ -101,6 +102,10 @@ div.column{
 .readMore a {
   color: aliceblue;
   padding: 0;
+}
+
+div.readMore:hover {
+  background-color: darken($color: #797979, $amount: 10%) !important;
 }
 
 .faqs {

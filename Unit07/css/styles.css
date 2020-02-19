@@ -457,13 +457,13 @@ input {
 nav li {
   list-style-type: none;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   text-align: center;
-  padding: .2rem 3rem; }
+  padding: 0; }
 
 nav a {
   display: block;
-  padding: .5rem 0;
+  padding: .9rem 0;
   text-decoration: none;
   color: black; }
 
@@ -663,6 +663,9 @@ div.social a {
   font-size: 3rem;
   text-align: center; }
 
+button:hover {
+  background-color: #1a1a1a; }
+
 div.social a:hover {
   transition: ease-out .5s;
   color: #4670e2; }
@@ -678,7 +681,7 @@ footer {
 
   nav li {
     font-size: 1.3rem;
-    padding: 1rem; }
+    padding: .5rem; }
 
   nav ul {
     margin: 0;
@@ -686,7 +689,8 @@ footer {
     display: flex; }
 
   nav a {
-    padding: 0; }
+    padding: 0;
+    display: block; }
 
   nav a:hover {
     transition: ease-in .3s;
@@ -805,13 +809,16 @@ footer {
     flex-basis: 100%; }
 
   .readMore {
-    background-color: #555555 !important;
+    background-color: #797979 !important;
     text-align: center;
     padding: .8rem 0; }
 
   .readMore a {
     color: aliceblue;
     padding: 0; }
+
+  div.readMore:hover {
+    background-color: #606060 !important; }
 
   .faqs {
     margin: .5rem .66vw; }
@@ -868,9 +875,17 @@ footer {
     margin: .4rem .35vw; }
 
   nav ul {
-    margin: 0;
+    margin: 0 0 0 1.2%;
     padding: 0;
     display: flex; }
+
+  nav li {
+    font-size: 1.6rem;
+    padding: 0; }
+
+  nav a {
+    display: block;
+    padding: .6rem; }
 
   input {
     padding: 0 0 0 .3rem;

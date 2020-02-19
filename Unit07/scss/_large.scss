@@ -55,10 +55,20 @@ header h2 {
 }
 
 nav ul {
-    margin: 0;
+    margin: 0 0 0 1.2%;
     padding: 0;
     display: flex;
 }
+
+nav li {
+    font-size: 1.6rem;
+    padding: 0;
+  }
+
+  nav a{
+      display:block;
+      padding: .6rem;
+  }
 
 input{
     padding: 0 0 0 .3rem;
