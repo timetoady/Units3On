@@ -1,5 +1,4 @@
 nav{
-
   overflow: unset;
 }
 
@@ -29,6 +28,11 @@ nav a:hover {
   display: none;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
 header h1 {
   font-size: 2rem;
 }
@@ -36,8 +40,7 @@ header h1 {
 #bigSearch{
   display: block;
   justify-content: right;
-  margin-top: 2.75rem;
-  margin-left: 2.5rem;
+  margin-top: 2rem;
 }
 
 input{
