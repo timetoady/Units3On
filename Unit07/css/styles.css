@@ -395,7 +395,7 @@ header {
   display: flex; }
 
 div#headWrapper {
-  background: #f6f8f9; }
+  background-color: #f6f8f9; }
 
 #headWrapper input {
   max-width: 30vw; }
@@ -709,11 +709,12 @@ footer {
     margin-left: 2.5rem; }
 
   input {
-    border-width: 0px;
+    border-width: 2px;
     padding: 0 0 0 .3rem;
     max-width: 48%;
     font-size: 1.1rem;
-    line-height: .9; }
+    line-height: .9;
+    background-color: #f6f8f9; }
 
   header h2 {
     font-size: 1rem; }
