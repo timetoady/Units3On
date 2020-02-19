@@ -8,6 +8,8 @@ footer {
 
 header {
     background-size: cover;
+    display: flex;
+    justify-content: space-between;
 }
 
 #footerWrapper {
@@ -29,29 +31,43 @@ header h2 {
     margin: 0 0 .5rem 1rem;
 }
 
-nav li {
-    min-width: 6rem;
+#bigSearch {
+    display: block;
+    margin-top: 7rem;
 }
-
 
 .lawyer h3 {
     font-size: 1.3rem;
 }
 
-.lawyerButton{
+.lawyerButton {
     font-size: .75rem;
     padding: .7rem .1rem;
 }
 
 .buttons {
     margin: .4rem 0;
-  }
+}
 
-  .column {
+.column {
     padding: 0;
     margin: .4rem .35vw;
 }
 
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+input{
+    padding: 0 0 0 .3rem;
+    max-width: 2%;
+    font-size: 1.5rem;
+    line-height: 1.15;
+    border-radius: 2px;
+  }
+  
 
 @for $i from 1 through 12 {
     $w: ($i / 12) * 95.5%;
@@ -67,4 +83,35 @@ nav li {
     .large2-#{$i} {
         flex-basis: $w;
     }
+}
+
+.faqs {
+    display: block;
+    background-color: rgb(240, 240, 240);
+    margin: .2rem .35vw;
+}
+
+.faqs p,
+h2 {
+    margin-bottom: 0rem;
+    padding: .2rem 0 .3rem .5rem;
+}
+
+.faqs a {
+    text-decoration: none;
+    color: black;
+    padding: 0 1rem;
+}
+
+.blogs {
+    margin: .5rem .1vw;
+    padding: 0;
+}
+
+.readMore div {
+    margin: 0 !important;
+}
+
+div.social {
+    margin: 0 27rem;
 }

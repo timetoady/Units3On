@@ -408,7 +408,8 @@ header h1 {
 header h2 {
   margin: 0;
   font-size: .8rem;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  padding: 0; }
 
 nav {
   font-family: "Slabo", sans-serif;
@@ -423,30 +424,51 @@ nav {
   background: linear-gradient(135deg, #feffff 0%, #ddf1f9 35%, #a0d8ef 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#feffff', endColorstr='#a0d8ef', GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */ }
+  /* IE6-9 fallback on horizontal gradient */
+  overflow: hidden;
+  position: relative; }
 
 nav ul {
   margin: 0;
   padding: 0;
-  display: flex; }
+  display: none; }
+
+#icon {
+  display: block;
+  margin-left: 5%; }
+
+#mobileTop {
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem;
+  position: relative; }
+
+input {
+  border-width: 0px;
+  padding: 0 0 0 .3rem;
+  max-width: 48%;
+  font-size: 1rem;
+  line-height: .9;
+  border-radius: 2px; }
+
+#bigSearch {
+  display: none; }
 
 nav li {
   list-style-type: none;
   text-decoration: none;
-  font-size: .8rem;
-  padding: .2rem .6rem; }
+  font-size: 1.1rem;
+  text-align: center;
+  padding: .2rem 3rem; }
 
 nav a {
   display: block;
   padding: .5rem 0;
-  text-align: center;
   text-decoration: none;
-  color: black;
-  justify-content: space-around; }
+  color: black; }
 
-nav a:hover {
-  transition: ease-in .3s;
-  color: white; }
+#icon a:hover {
+  color: black; }
 
 nav li:hover {
   transition: ease-in .3s;
@@ -485,7 +507,7 @@ p {
 
 .lawyer {
   text-align: center;
-  box-shadow: 1px 1px 3px  #888888;
+  box-shadow: 1px 1px 3px #888888;
   margin: 0.4rem 1vw; }
 
 .lawyerButton {
@@ -520,12 +542,40 @@ img {
   padding: 0;
   margin: .4rem 1vw; }
 
-.readMore div {
-  margin-top: 1rem; }
+.column p {
+  margin-bottom: 1rem; }
 
 .readMore a {
   text-decoration: none;
   color: black; }
+
+.faqs {
+  display: block;
+  background-color: #f0f0f0;
+  margin: 0 2% .2rem 2%;
+  padding: .4rem 0; }
+
+.faqs p,
+h2 {
+  padding: .5rem 1rem; }
+
+.faqs a {
+  text-decoration: none;
+  color: black;
+  padding: .4rem; }
+
+.blogs {
+  margin: 0 2% .2rem 2%; }
+
+.blogs div {
+  background-color: #f0f0f0; }
+
+.blogs a {
+  display: block; }
+
+.blogs p,
+h2 {
+  padding: .6rem; }
 
 .small-1 {
   flex-basis: 8%; }
@@ -602,17 +652,63 @@ img {
 div#footerWrapper {
   background-color: black; }
 
+div.social {
+  display: flex;
+  justify-content: space-around; }
+
+div.social a {
+  text-decoration: none;
+  color: white;
+  font-size: 3rem;
+  text-align: center; }
+
+div.social a:hover {
+  transition: ease-out .5s;
+  color: #4670e2; }
+
 footer {
   text-align: center;
   padding: .8rem 2% .5rem 2%;
   color: aliceblue; }
 
 @media only screen and (min-width: 560px) {
+  nav {
+    overflow: unset; }
+
   nav li {
-    font-size: 1.2rem; }
+    font-size: 1.3rem;
+    padding: 1rem; }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex; }
+
+  nav a {
+    padding: 0; }
+
+  nav a:hover {
+    transition: ease-in .3s;
+    color: white; }
+
+  #mobileTop {
+    display: none; }
 
   header h1 {
     font-size: 2rem; }
+
+  #bigSearch {
+    display: block;
+    justify-content: right;
+    margin-top: 2.75rem;
+    margin-left: 2.5rem; }
+
+  input {
+    border-width: 0px;
+    padding: 0 0 0 .3rem;
+    max-width: 48%;
+    font-size: 1.1rem;
+    line-height: .9; }
 
   header h2 {
     font-size: 1rem; }
@@ -705,7 +801,24 @@ footer {
     flex-basis: 91.6666666667%; }
 
   .medium2-12 {
-    flex-basis: 100%; } }
+    flex-basis: 100%; }
+
+  .readMore {
+    background-color: #555555 !important;
+    text-align: center;
+    padding: .8rem 0; }
+
+  .readMore a {
+    color: aliceblue; }
+
+  .faqs {
+    margin: .5rem .66vw; }
+
+  .blogs {
+    margin: .5rem 0; }
+
+  div.social {
+    margin: 0 10rem; } }
 @media only screen and (min-width: 1025px) {
   nav,
   main,
@@ -715,7 +828,9 @@ footer {
     margin: 0 auto; }
 
   header {
-    background-size: cover; }
+    background-size: cover;
+    display: flex;
+    justify-content: space-between; }
 
   #footerWrapper {
     max-width: 75rem;
@@ -732,8 +847,9 @@ footer {
     font-size: 1.2rem;
     margin: 0 0 .5rem 1rem; }
 
-  nav li {
-    min-width: 6rem; }
+  #bigSearch {
+    display: block;
+    margin-top: 7rem; }
 
   .lawyer h3 {
     font-size: 1.3rem; }
@@ -748,6 +864,18 @@ footer {
   .column {
     padding: 0;
     margin: .4rem .35vw; }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex; }
+
+  input {
+    padding: 0 0 0 .3rem;
+    max-width: 2%;
+    font-size: 1.5rem;
+    line-height: 1.15;
+    border-radius: 2px; }
 
   .large-1 {
     flex-basis: 7.9583333333%; }
@@ -819,4 +947,29 @@ footer {
     flex-basis: 91.6666666667%; }
 
   .large2-12 {
-    flex-basis: 100%; } }
+    flex-basis: 100%; }
+
+  .faqs {
+    display: block;
+    background-color: #f0f0f0;
+    margin: .2rem .35vw; }
+
+  .faqs p,
+  h2 {
+    margin-bottom: 0rem;
+    padding: .2rem 0 .3rem .5rem; }
+
+  .faqs a {
+    text-decoration: none;
+    color: black;
+    padding: 0 1rem; }
+
+  .blogs {
+    margin: .5rem .1vw;
+    padding: 0; }
+
+  .readMore div {
+    margin: 0 !important; }
+
+  div.social {
+    margin: 0 27rem; } }

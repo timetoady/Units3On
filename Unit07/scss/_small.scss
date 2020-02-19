@@ -10,7 +10,7 @@ header {
 div#headWrapper {
     background: rgb(246, 248, 249);
     // display: flex;
-    
+
 }
 
 #headWrapper input {
@@ -26,7 +26,8 @@ header h1 {
 header h2 {
     margin: 0;
     font-size: .8rem;
-    font-family: $fontFamily
+    font-family: $fontFamily;
+    padding: 0;
 }
 
 
@@ -46,33 +47,59 @@ nav {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#feffff', endColorstr='#a0d8ef', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
+    overflow: hidden;
+    position: relative;
 }
 
 nav ul {
     margin: 0;
     padding: 0;
+    display: none;
+}
+
+#icon {
+    display: block;
+    margin-left: 5%;
+
+}
+
+#mobileTop {
     display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+    position: relative;
+}
+
+input {
+    border-width: 0px;
+    padding: 0 0 0 .3rem;
+    max-width: 48%;
+    font-size: 1rem;
+    line-height: .9;
+    border-radius: 2px;
+}
+
+#bigSearch {
+    display: none;
 }
 
 nav li {
     list-style-type: none;
     text-decoration: none;
-    font-size: .8rem;
-    padding: .2rem .6rem;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: .2rem 3rem;
 }
 
 nav a {
     display: block;
     padding: .5rem 0;
-    text-align: center;
     text-decoration: none;
     color: black;
-    justify-content: space-around;
 }
 
-nav a:hover {
-    transition: ease-in .3s;
-    color: white;
+#icon a:hover {
+    color: black;
 }
 
 nav li:hover {
@@ -125,12 +152,11 @@ p {
 
 .lawyer {
     text-align: center;
-    // border: 1px solid gray;
-    box-shadow: 1px 1px 3px  #888888;
+    box-shadow: 1px 1px 3px #888888;
     margin: .4rem $gutter;
 }
 
-.lawyerButton{
+.lawyerButton {
     margin: 1rem;
     background-color: black;
     color: white;
@@ -141,7 +167,7 @@ p {
     font-size: .7rem;
 }
 
-.bigButton{
+.bigButton {
     margin: .5rem;
     background-color: black;
     color: white;
@@ -150,7 +176,7 @@ p {
     border: none;
     font-size: 1.1rem;
     font-weight: 700;
-    
+
 }
 
 .buttons {
@@ -169,14 +195,51 @@ img {
     margin: .4rem 1vw;
 }
 
-.readMore div {
-    margin-top: 1rem;
+.column p {
+    margin-bottom: 1rem;
 }
 
-.readMore a{
+.readMore a {
     text-decoration: none;
     color: black;
-    
+
+
+}
+
+.faqs {
+    display: block;
+    background-color: rgb(240, 240, 240);
+    margin: 0 2% .2rem 2%;
+    padding: .4rem 0;
+
+}
+
+.faqs p,
+h2 {
+    padding: .5rem 1rem;
+}
+
+.faqs a {
+    text-decoration: none;
+    color: black;
+    padding: .4rem;
+}
+
+.blogs {
+    margin: 0 2% .2rem 2%;
+}
+
+.blogs div {
+    background-color: rgb(240, 240, 240);
+}
+
+.blogs a {
+    display: block;
+}
+
+.blogs p,
+h2 {
+    padding: .6rem;
 }
 
 @for $i from 1 through 12 {
@@ -199,7 +262,26 @@ img {
 
 div#footerWrapper {
     background-color: black;
+}
 
+div.social {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+div.social a {
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+
+
+}
+
+div.social a:hover {
+    transition: ease-out .5s;
+    color: rgb(70, 112, 226)
 }
 
 footer {

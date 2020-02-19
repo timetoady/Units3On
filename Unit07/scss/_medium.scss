@@ -1,10 +1,50 @@
+nav{
+
+  overflow: unset;
+}
+
 nav li {
   // 
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav a{
+  padding: 0;
+}
+
+nav a:hover {
+  transition: ease-in .3s;
+  color: white;
+}
+
+#mobileTop{
+  display: none;
 }
 
 header h1 {
   font-size: 2rem;
+}
+
+#bigSearch{
+  display: block;
+  justify-content: right;
+  margin-top: 2.75rem;
+  margin-left: 2.5rem;
+}
+
+input{
+  border-width: 0px;
+  padding: 0 0 0 .3rem;
+  max-width: 48%;
+  font-size: 1.1rem;
+  line-height: .9;
 
 }
 
@@ -50,4 +90,26 @@ div.column{
   .medium2-#{$i} {
     flex-basis: $w;
   }
+}
+
+.readMore {
+  background-color: rgb(85, 85, 85) !important;
+  text-align: center;
+  padding: .8rem 0;
+}
+
+.readMore a {
+  color: aliceblue;
+}
+
+.faqs {
+  margin: .5rem .66vw;
+}
+
+.blogs {
+  margin: .5rem 0;
+}
+
+div.social { 
+  margin: 0 10rem;
 }
