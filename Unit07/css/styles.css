@@ -547,7 +547,8 @@ img {
 
 .readMore a {
   text-decoration: none;
-  color: black; }
+  color: black;
+  padding: .4rem; }
 
 .faqs {
   display: block;
@@ -809,7 +810,8 @@ footer {
     padding: .8rem 0; }
 
   .readMore a {
-    color: aliceblue; }
+    color: aliceblue;
+    padding: 0; }
 
   .faqs {
     margin: .5rem .66vw; }
