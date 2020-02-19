@@ -811,11 +811,11 @@ footer {
   .readMore {
     background-color: #797979 !important;
     text-align: center;
-    padding: .8rem 0; }
+    padding: 0; }
 
   .readMore a {
     color: aliceblue;
-    padding: 0; }
+    padding: .8rem; }
 
   div.readMore:hover {
     background-color: #606060 !important; }
