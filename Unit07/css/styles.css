@@ -973,6 +973,10 @@ footer {
   .large2-12 {
     flex-basis: 100%; }
 
+  .blogs {
+    margin: 0;
+    margin-left: 10%; }
+
   .faqs {
     display: block;
     background-color: #f0f0f0;
@@ -996,4 +1000,8 @@ footer {
     margin: 0 !important; }
 
   div.social {
-    margin: 0 24rem; } }
+    margin: 0 24rem; }
+
+  .scooch {
+    margin-left: 1.1%;
+    margin-bottom: .5rem; } }

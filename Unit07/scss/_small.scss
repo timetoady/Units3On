@@ -242,6 +242,7 @@ h2 {
     padding: .6rem;
 }
 
+//For loops
 @for $i from 1 through 12 {
     $w: ($i / 12) * 96%;
 
@@ -275,8 +276,6 @@ div.social a {
     color: white;
     font-size: 3rem;
     text-align: center;
-
-
 }
 
 button {
