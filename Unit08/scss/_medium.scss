@@ -1,0 +1,46 @@
+nav{
+  overflow: unset;
+}
+
+nav li {
+  font-size: 1.3rem;
+  padding: .5rem;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav a{
+  padding: 0;
+  display:block;
+}
+
+nav a:hover {
+  transition: ease-in .3s;
+  color: white;
+}
+
+#mobileTop{
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header h2 {
+  font-size: 1rem;
+}
+
+body {
+  padding-top: .5rem;
+}
+

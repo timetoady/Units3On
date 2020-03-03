@@ -1,0 +1,46 @@
+main,
+    {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+header {
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footerWrapper {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+body {
+    padding-top: .5rem;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin: 5rem 0 0 1rem;
+}
+
+header h2 {
+    font-size: 1.2rem;
+    margin: 0 0 .5rem 1rem;
+}
+
+nav ul {
+    margin: 0 0 0 1.2%;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    font-size: 1.6rem;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    padding: .6rem;
+}
