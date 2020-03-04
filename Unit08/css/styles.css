@@ -475,14 +475,23 @@ nav li:hover {
   background-color: #adc7ff; }
 
 body {
-  background-color: #6d6d6d;
   margin: 0; }
+
+#topStory {
+  grid-area: topStory; }
+
+.stories {
+  grid-area: story; }
 
 main {
   background-color: white;
   color: black;
-  margin: 0;
-  display: grid; }
+  margin: 1.5rem 0 0 2%;
+  display: grid;
+  grid-gap: .2rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "topStory topStory" "story story"; }
 
 main h1,
 h2,
@@ -491,10 +500,14 @@ p {
   font-family: "Roboto", sans-serif; }
 
 figure {
-  margin: 0; }
+  margin: 0;
+  width: 100%; }
 
 figure img {
-  width: 100%; }
+  width: 96%; }
+
+#topStory img {
+  width: 98%; }
 
 figcaption {
   text-align: center;
@@ -524,8 +537,10 @@ div.social a:hover {
   color: #4670e2; }
 
 footer {
-  padding: 1rem 2% .5rem 10%;
-  color: aliceblue; }
+  padding: 2rem 2% .5rem 10%;
+  color: aliceblue;
+  background-color: gray;
+  margin-top: 3rem; }
 
 footer li, a {
   list-style-type: none;
@@ -536,6 +551,10 @@ footer li, a {
 footer ul {
   margin: .0 0 1rem 0;
   padding: 0; }
+
+footer p {
+  text-align: center;
+  font-size: .6rem; }
 
 @media only screen and (min-width: 560px) {
   nav {
@@ -571,11 +590,16 @@ footer ul {
   header h2 {
     font-size: 1rem; }
 
-  body {
-    padding-top: .5rem; } }
+  #footerGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "topStory topStory topStory" "story story story"; } }
 @media only screen and (min-width: 1025px) {
   main {
-    max-width: 75rem;
+    max-width: 80rem;
     margin: 0 auto; }
 
   header {
@@ -586,9 +610,6 @@ footer ul {
   #footerWrapper {
     max-width: 75rem;
     margin: 0 auto; }
-
-  body {
-    padding-top: .5rem; }
 
   header h1 {
     font-size: 2.2rem;
@@ -609,4 +630,20 @@ footer ul {
 
   nav a {
     display: block;
-    padding: .6rem; } }
+    padding: .6rem; }
+
+  #footerGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; }
+
+  main {
+    margin-top: 1rem;
+    grid-gap: .7rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto; }
+    main #topStory {
+      grid-column: 1 / span 3;
+      grid-row: 1 / span 2; }
+
+  figure img, #topStory img {
+    width: 100%; } }

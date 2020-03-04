@@ -16,7 +16,8 @@
     <div id="headWrapper">
         <header>
             <div>
-                <img src="/Unit08/assets/logo.png" alt="Greater News Agency">
+                <img src="/Unit08/assets/logo.png" alt="Greater News Agency" srcset="/Unit08/assets/logo.png,
+                /Unit08/assets/logo2x.png 2x, /Unit08/assets/logo3x.png 3x">
             </div>
 
         </header>
@@ -39,26 +40,27 @@
     </nav>
 
     <main>
-        <figure class="topStory">
+        <figure id="topStory">
             <picture>
                 <source media="(max-width: 600px)" srcset="/Unit08/assets/news1small.jpg">
-                    <source media="(max-width: 900px)" srcset="/Unit08/assets/news1medium.jpg">
-                    <source media="(max-width: 1000px)" srcset="/Unit08/assets/news1-1.jpg">
-                        <img src="/Unit08/assets/news1large.jpg" alt="Decision 2020">
+                <source media="(max-width: 900px)" srcset="/Unit08/assets/news1medium.jpg">
+                <source media="(min-width: 1000px)" srcset="/Unit08/assets/news1large2.jpg">
+                <img src="/Unit08/assets/news1large2.jpg" alt="Decision 2020">
             </picture>
-            
+
             <figcaption>The latest from the campaign trails</figcaption>
         </figure>
 
+        <div class="stories"></div>
         <figure class="story">
 
             <picture>
-            <source media="(max-width: 600px)" srcset="/Unit08/assets/news2small.jpg">
+                <source media="(max-width: 600px)" srcset="/Unit08/assets/news2small.jpg">
                 <source media="(max-width: 900px)" srcset="/Unit08/assets/news2medium.jpg">
-                <source media="(max-width: 1000px)" srcset="/Unit08/assets/news2medium.jpg">
-                    <img src="/Unit08/assets/news2medium.jpg" alt="A rally">
-        </picture>
-            
+                <source media="(min-width: 1000px)" srcset="/Unit08/assets/news2medium.jpg">
+                <img src="/Unit08/assets/news2medium.jpg" alt="A rally">
+            </picture>
+
             <figcaption>Biden Rallies</figcaption>
         </figure>
 
@@ -66,12 +68,12 @@
 
             <picture>
                 <source media="(max-width: 600px)" srcset="/Unit08/assets/news3small.jpg">
-                    <source media="(max-width: 900px)" srcset="/Unit08/assets/news3medium.jpg">
-                    <source media="(max-width: 1000px)" srcset="/Unit08/assets/news3medium.jpg">
-                        <img src="/Unit08/assets/news3small.jpg" alt="Joe Biden supporters">
+                <source media="(max-width: 900px)" srcset="/Unit08/assets/news3medium.jpg">
+                <source media="(min-width: 1000px)" srcset="/Unit08/assets/news3medium.jpg">
+                <img src="/Unit08/assets/news3medium.jpg" alt="Joe Biden supporters">
             </picture>
 
-            
+
             <figcaption>Biden supports celebrate win</figcaption>
         </figure>
 
@@ -79,9 +81,9 @@
 
             <picture>
                 <source media="(max-width: 600px)" srcset="/Unit08/assets/news4small.jpg">
-                    <source media="(max-width: 900px)" srcset="/Unit08/assets/news4medium.jpg">
-                    <source media="(max-width: 1000px)" srcset="/Unit08/assets/news4medium.jpg">
-                        <img src="/Unit08/assets/news4medium.jpg" alt="Voting box">
+                <source media="(max-width: 900px)" srcset="/Unit08/assets/news4medium.jpg">
+                <source media="(min-width: 1000px)" srcset="/Unit08/assets/news4medium.jpg">
+                <img src="/Unit08/assets/news4medium.jpg" alt="Voting box">
             </picture>
             <figcaption>How you can vote</figcaption>
 
@@ -90,9 +92,9 @@
         <figure class="story">
             <picture>
                 <source media="(max-width: 600px)" srcset="/Unit08/assets/news5small.jpg">
-                    <source media="(max-width: 900px)" srcset="/Unit08/assets/news5medium.jpg">
-                    <source media="(max-width: 1000px)" srcset="/Unit08/assets/news5medium.jpg">
-                        <img src="/Unit08/assets/news5medium.jpg" alt="Vote buttons">
+                <source media="(max-width: 900px)" srcset="/Unit08/assets/news5medium.jpg">
+                <source media="(min-width: 1000px)" srcset="/Unit08/assets/news5medium.jpg">
+                <img src="/Unit08/assets/news5medium.jpg" alt="Vote buttons">
             </picture>
             <figcaption>Latest from voting centers</figcaption>
 
@@ -102,30 +104,31 @@
 
             <picture>
                 <source media="(max-width: 600px)" srcset="/Unit08/assets/news6small.jpg">
-                    <source media="(max-width: 900px)" srcset="/Unit08/assets/news6medium.jpg">
-                    <source media="(max-width: 1000px)" srcset="/Unit08/assets/news6medium.jpg">
-                        <img src="/Unit08/assets/news6medium.jpg" alt="Blind justice">
+                <source media="(max-width: 900px)" srcset="/Unit08/assets/news6medium.jpg">
+                <source media="(min-width: 1000px)" srcset="/Unit08/assets/news6medium.jpg">
+                <img src="/Unit08/assets/news6medium.jpg" alt="Blind justice">
             </picture>
             <figcaption>True justice for victims?</figcaption>
-        
+
         </figure>
 
         <figure class="story">
 
             <picture>
                 <source media="(max-width: 600px)" srcset="/Unit08/assets/news7small.jpg">
-                    <source media="(max-width: 900px)" srcset="/Unit08/assets/news7medium.jpg">
-                    <source media="(max-width: 1000px)" srcset="/Unit08/assets/news7medium.jpg">
-                        <img src="/Unit08/assets/news7small.jpg" alt="Politics and youth">
+                <source media="(max-width: 900px)" srcset="/Unit08/assets/news7medium.jpg">
+                <source media="(min-width: 1000px)" srcset="/Unit08/assets/news7medium.jpg">
+                <img src="/Unit08/assets/news7medium.jpg" alt="Politics and youth">
             </picture>
             <figcaption>Politics and youth</figcaption>
-        
+
         </figure>
 
 
     </main>
 
     <footer>
+        <div id="footerGrid">
         <div>
             <h2>SECTIONS</h2>
             <ul>
@@ -167,7 +170,8 @@
                 <li><a href="#">Albert Alliteration</a></li>
             </ul>
         </div>
-
+    </div>
+        <p>&copy; 2020 &diamond; All rights reserved</p>
     </footer>
     <script src="news.js"></script>
 </body>

@@ -109,16 +109,30 @@ nav li:hover {
 
 //Main settings
 body {
-    background-color: rgb(109, 109, 109);
     margin: 0;
     
+}
+
+//Grid settings
+
+#topStory{
+    grid-area: topStory;
+}
+
+.stories{
+    grid-area: story;
 }
 
 main {
     background-color: white;
     color: black;
-    margin: 0;
+    margin: 1.5rem 0 0 2%;
     display: grid;
+    grid-gap: .2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "topStory topStory"
+            "story story";
 }
 
 main h1,
@@ -130,16 +144,26 @@ p {
 
 figure{
     margin: 0;
-}
-
-figure img {
     width: 100%;
 }
+
+
+figure img {
+    width: 96%;
+}
+
+#topStory img{
+    width: 98%;
+}
+
 
 figcaption {
     text-align: center;
     padding: .3rem;
 }
+
+
+
 
 //Footer settings
 
@@ -174,8 +198,10 @@ div.social a:hover {
 }
 
 footer {
-    padding: 1rem 2% .5rem 10%;
+    padding: 2rem 2% .5rem 10%;
     color: aliceblue;
+    background-color: gray;
+    margin-top: 3rem;
 }
 
 footer li, a {
@@ -192,6 +218,7 @@ footer ul{
 
 }
 
-.story{
-    
+footer p{
+    text-align: center;
+    font-size: .6rem;
 }

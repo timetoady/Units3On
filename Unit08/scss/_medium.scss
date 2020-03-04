@@ -40,7 +40,13 @@ header h2 {
   font-size: 1rem;
 }
 
-body {
-  padding-top: .5rem;
+#footerGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
+main{
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "topStory topStory topStory"
+          "story story story";
+}

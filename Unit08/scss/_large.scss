@@ -1,6 +1,5 @@
-main,
-    {
-    max-width: 75rem;
+main{
+    max-width: 80rem;
     margin: 0 auto;
 }
 
@@ -13,10 +12,6 @@ header {
 #footerWrapper {
     max-width: 75rem;
     margin: 0 auto;
-}
-
-body {
-    padding-top: .5rem;
 }
 
 header h1 {
@@ -44,3 +39,24 @@ nav a {
     display: block;
     padding: .6rem;
 }
+
+
+#footerGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  main{
+    margin-top: 1rem;
+    grid-gap: .7rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: auto;
+    #topStory{
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 2;
+    }
+  }
+
+  figure img, #topStory img{
+      width: 100%;
+  }
