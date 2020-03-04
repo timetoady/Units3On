@@ -48,7 +48,7 @@ nav a {
 
   main{
     margin-top: 1rem;
-    grid-gap: .7rem;
+    gap: .7rem;
     grid-template-columns: 1fr 1fr 1fr 1fr; 
     grid-template-rows: auto;
     #topStory{

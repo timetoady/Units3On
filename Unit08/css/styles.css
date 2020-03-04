@@ -488,7 +488,7 @@ main {
   color: black;
   margin: 1.5rem 0 0 2%;
   display: grid;
-  grid-gap: .2rem;
+  gap: .2rem;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: "topStory topStory" "story story"; }
@@ -638,7 +638,7 @@ footer p {
 
   main {
     margin-top: 1rem;
-    grid-gap: .7rem;
+    gap: .7rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto; }
     main #topStory {
