@@ -1,0 +1,194 @@
+//Header settings
+
+header {
+    padding: 1rem .5rem .5rem .5rem;
+    color: black;
+    display: flex;
+    background-color: honeydew;
+
+}
+
+div#headWrapper {
+    // background-color: rgb(246, 248, 249);
+}
+
+header h1 {
+    font-size: 2.4rem;
+    font-family: $fontFamily2;
+    margin: .2rem 0 0 0;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: $fontFamily;
+    padding: 0;
+}
+
+
+//Navigation settings
+
+nav {
+    font-family: $fontFamily;
+    font-weight: 100;
+    color: black;
+    overflow: hidden;
+    position: relative;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f3e2c7+0,c19e67+50,b68d4c+51,e9d4b3+100;L+Brown+3D */
+background: rgb(243,226,199); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgba(243,226,199,1) 0%, rgba(193,158,103,1) 50%, rgba(182,141,76,1) 51%, rgba(233,212,179,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(243,226,199,1) 0%,rgba(193,158,103,1) 50%,rgba(182,141,76,1) 51%,rgba(233,212,179,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(243,226,199,1) 0%,rgba(193,158,103,1) 50%,rgba(182,141,76,1) 51%,rgba(233,212,179,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', endColorstr='#e9d4b3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+#icon {
+    display: block;
+    margin-left: 5%;
+
+}
+
+#mobileTop {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+    position: relative;
+}
+
+input {
+    border-width: 0px;
+    padding: 0 0 0 .3rem;
+    max-width: 48%;
+    font-size: 1rem;
+    line-height: .9;
+    border-radius: 2px;
+}
+
+nav li {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 0;
+    
+}
+
+nav a {
+    display: block;
+    padding: .9rem 0;
+    text-decoration: none;
+    color: black;
+}
+
+#icon a:hover {
+    color: black;
+}
+
+nav li:hover {
+    transition: ease-in .3s;
+    background-color: rgb(70, 112, 226);
+
+}
+
+.active {
+    background-color: lighten($navColor, 30%)
+}
+
+//Main settings
+body {
+    margin: 0;
+    
+    
+}
+
+main {
+    background-color: white;
+    color: black;
+    margin: 1.5rem 0 0 2%;
+    
+}
+
+main h1{
+    font-family: $fontFamily2;
+    margin-left: .5rem;
+}
+
+main,
+h2,
+p {
+    margin: 0;
+    font-family: $fontFamily;
+}
+
+
+
+
+
+
+//Footer settings
+
+div#footerWrapper {
+    background-color: black;
+}
+
+div.social {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+div.social a {
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: lighten($color: #000000, $amount: 10%)
+}
+
+footer {
+    padding: .5rem 0;
+    color: black;
+    margin-top: 3rem;
+    text-align: center;
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f3e2c7+0,c19e67+50,b68d4c+51,e9d4b3+100;L+Brown+3D */
+background: rgb(243,226,199); /* Old browsers */
+background: -moz-linear-gradient(45deg,  rgba(243,226,199,1) 0%, rgba(193,158,103,1) 50%, rgba(182,141,76,1) 51%, rgba(233,212,179,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg,  rgba(243,226,199,1) 0%,rgba(193,158,103,1) 50%,rgba(182,141,76,1) 51%,rgba(233,212,179,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg,  rgba(243,226,199,1) 0%,rgba(193,158,103,1) 50%,rgba(182,141,76,1) 51%,rgba(233,212,179,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', endColorstr='#e9d4b3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+footer li, a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px black;
+    
+}
+
+footer ul{
+    margin: .0 0 1rem 0;
+    padding: 0;
+
+}
+
+footer p{
+    text-align: center;
+    font-size: .6rem;
+}
