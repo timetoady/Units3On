@@ -523,13 +523,15 @@ picture div {
 
 .tile {
   width: 100%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 #planVisit div a {
   display: block;
   text-decoration: none;
+  width: 100%;
   height: 400px;
-  padding: 0 2%;
+  padding: 0;
   color: white;
   transition: all .5s ease-in;
   margin-bottom: 20px;
@@ -869,7 +871,10 @@ footer p {
     margin-right: 1%; }
 
   #planVisit div:nth-child(2), #planVisit div:nth-child(4) {
-    margin-right: 0; } }
+    margin-right: 0; }
+
+  .tile {
+    background-size: unset; } }
 @media only screen and (min-width: 1025px) {
   body, main, nav, header, footer {
     max-width: 64rem;
