@@ -10,3 +10,17 @@ function myFunction() {
     }
   }
   
+function displayUpdate() {
+  let winWidth = window.innerWidth;
+  console.log(winWidth)
+  let navState = document.querySelector("nav");
+  let navState2 = document.querySelector("nav > ul")
+  if (winWidth > 560) {
+     navState.setAttribute("class", "removOverflow")
+     navState.setAttribute("class", "navDesk")
+  } else {
+    navState.setAttribute("class", "addOverflow")
+    navState2.setAttribute("class", "navMobile")
+  }
+}
+

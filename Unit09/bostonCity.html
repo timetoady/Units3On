@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,8 @@
         integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <title>09 Boston City</title>
 </head>
-<body>
+
+<body onload="displayUpdate()" onresize="displayUpdate()">
 
     <div id="headWrapper">
         <header>
@@ -31,38 +33,131 @@
         <ul id="myLinks">
             <li class="active"><a href="#">Visit</a></li>
             <li><a href="#">Departments</a></li>
-            <li > <a href="#">Services</a></li>
+            <li> <a href="#">Services</a></li>
             <li><a href="#">Pay Bills</a></li>
             <li><a href="#">Meetings</a></li>
             <li><a href="#">Help</a></li>
         </ul>
 
     </nav>
-    
-<main>
-<section id="slider">
-<!-- Where the slider goes -->
 
-</section>
+    <main>
+
+        <div class="slider">
+
+            <picture>
+                <source srcset="/Unit09/assets/slide1small.jpg" media="(max-width: 28.12rem)">
+                <source srcset="/Unit09/assets/slide1big.jpg" media="(min-width: 28.12rem)">
+                <img src="/Unit09/assets/slide1big.jpg" alt="Boston rent">
+                <div>
+                    <p>Some of Boston city rental costs. Might be better to just visit!</p>
+                </div>
+            </picture>
+
+            <picture>
+                <source srcset="/Unit09/assets/slide2small.jpg" media="(max-width: 28.12rem)">
+                <source srcset="/Unit09/assets/slide2big.jpg" media="(min-width: 28.12rem)">
+                <img src="/Unit09/assets/slide2big.jpg" alt="Skyline 1">
+                <div>
+                    <p>Boston's skyline outlines how beautiful the city looks from the water.</p>
+                </div>
+            </picture>
+
+            <picture>
+                <source srcset="/Unit09/assets/slide3small.jpg" media="(max-width: 28.12rem)">
+                <source srcset="/Unit09/assets/slide3big.jpg" media="(min-width: 28.12rem)">
+                <img src="/Unit09/assets/slide3big.jpg" alt="Skyline 2">
+                <div>
+                    <p>Boston from the view of downtown's main waterfront.</p>
+                </div>
+            </picture>
+
+            <picture>
+                <source srcset="/Unit09/assets/slide4small.jpg" media="(max-width: 28.12rem)">
+                <source srcset="/Unit09/assets/slide4big.jpg" media="(min-width: 28.12rem)">
+                <img src="/Unit09/assets/slide4big.jpg" alt="Harbon">
+                <div>
+                    <p>Boston harbor is a hub of commerse, activity, and shipping. </p>
+                </div>
+            </picture>
+
+            <picture>
+                <source srcset="/Unit09/assets/slide5small.jpg" media="(max-width: 28.12rem)">
+                <source srcset="/Unit09/assets/slide5big.jpg" media="(min-width: 28.12rem)">
+                <img src="/Unit09/assets/slide5big.jpg" alt="Historical building">
+                <div>
+                    <p>Nothing about this building stands out in any way, except for it's age and assigned
+                        historical value.</p>
+                </div>
+            </picture>
+
+        </div>
 
 
-<section id="planVisit">
-    <h1>Plan Your Visit</h1>
-<div class="planGrid">
+        <section>
+
+            <h1>Plan Your Visit</h1>
+            <div id="planVisit">
+
+                <div class="tile">
+                    <a href="#">
+                        <p class="fas fa-home"></p>
+                        <h3>PLACES TO STAY</h3>
+                    </a>
+                </div>
+
+                <div class="tile">
+                    <a href="#">
+                        <p class="fas fa-train"></p>
+                        <h3>WALK THE RED LINE</h3>
+                    </a>
+                </div>
+
+                <div class="tile">
+                    <a href="#">
+                        <p class="fas fa-key"></p>
+                        <h3>PASS TO THE CITY</h3>
+                    </a>
+                </div>
+
+                <div class="tile">
+                    <a href="#">
+                        <p class="fas fa-utensils"></p>
+                        <h3>FINE DINING</h3>
+                    </a>
+                </div>
 
 
 
 
+            </div>
+            </div>
 
-</div>
+        </section>
 
-</section>
-</main>
+    </main>
 
-<footer>
-    &copy; 2020 &bull; TTDesigns &bull; 1-800-555-1654 &bull; Login
-</footer>
+    <footer>
+        &copy; 2020 &bull; TTDesigns &bull; 1-800-555-1654 &bull; Login
+    </footer>
 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                dots: true,
+                arrows: false,
+                infinite: true,
+                speed: 1000,
+                cssEase: 'ease-out',
+                autoplay: true,
+                autoplaySpeed: 30000
+            });
+        });
+    </script>
     <script src="bostonCity.js"></script>
 </body>
+
 </html>
