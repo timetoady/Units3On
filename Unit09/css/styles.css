@@ -910,6 +910,9 @@ footer p {
     display: block;
     padding: .6rem; }
 
+  #planVisit {
+    margin-left: .5% !important; }
+
   #planVisit div {
     width: 24.2%;
     height: 300px; }
