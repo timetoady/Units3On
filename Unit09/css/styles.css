@@ -524,7 +524,8 @@ picture div {
 .tile {
   width: 100%;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  height: 400px; }
 
 #planVisit div a {
   display: block;
@@ -535,22 +536,29 @@ picture div {
   color: white;
   transition: all .5s ease-in;
   margin-bottom: 20px;
-  text-align: center; }
+  text-align: center;
+  background-size: cover; }
+
+.tile {
+  background-size: cover; }
 
 #planVisit div:nth-child(1) {
-  background-image: url("/Unit09/assets/visit1reg.jpg"); }
+  background-image: url("/Unit09/assets/visit1reg.jpg");
+  margin-bottom: 1rem; }
 
 #planVisit div:nth-child(1) a {
   background-color: blue; }
 
 #planVisit div:nth-child(2) {
-  background-image: url("/Unit09/assets/visit2reg.jpg"); }
+  background-image: url("/Unit09/assets/visit2reg.jpg");
+  margin-bottom: 1rem; }
 
 #planVisit div:nth-child(2) a {
   background-color: brown; }
 
 #planVisit div:nth-child(3) {
-  background-image: url("/Unit09/assets/visit3reg.jpg"); }
+  background-image: url("/Unit09/assets/visit3reg.jpg");
+  margin-bottom: 1rem; }
 
 #planVisit div:nth-child(3) a {
   background-color: black; }
@@ -869,10 +877,7 @@ footer p {
 
   #planVisit div {
     width: 49%;
-    margin-right: 1%; }
-
-  .tile {
-    background-size: unset; } }
+    margin-right: 1%; } }
 @media only screen and (min-width: 1025px) {
   body, main, nav, header, footer {
     max-width: 64rem;

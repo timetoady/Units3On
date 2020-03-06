@@ -177,6 +177,8 @@ picture div {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 400px;
+
 }
 
 #planVisit div a {
@@ -189,11 +191,17 @@ picture div {
     transition: all .5s ease-in;
     margin-bottom: 20px;
     text-align: center;
+    background-size: cover;
     
 }
 
+.tile{
+    background-size: cover;
+  }
+
 #planVisit div:nth-child(1) {
     background-image: url("/Unit09/assets/visit1reg.jpg");
+    margin-bottom: 1rem;
     
 }
 
@@ -203,6 +211,7 @@ picture div {
 
 #planVisit div:nth-child(2) {
     background-image: url("/Unit09/assets/visit2reg.jpg");
+    margin-bottom: 1rem;
 }
 
 #planVisit div:nth-child(2) a {
@@ -211,6 +220,7 @@ picture div {
 
 #planVisit div:nth-child(3) {
     background-image: url("/Unit09/assets/visit3reg.jpg");
+    margin-bottom: 1rem;
 }
 
 #planVisit div:nth-child(3) a {
