@@ -1,0 +1,146 @@
+//Header settings
+
+header {
+    padding: 1rem 0 .5rem 0;
+    color: black;
+    background-image: url("/Unit09/assets/headerMobile.jpg");
+
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-family: $fontFamily2;
+    margin: .2rem 0 0 2%;
+}
+
+header h2 {
+    margin: 0 0 0 2%;
+    font-size: 1.3rem;
+    font-family: $fontFamily;
+    padding: 0;
+}
+
+
+//Navigation settings
+
+nav {
+    font-family: $fontFamily;
+    font-weight: 100;
+    color: black;
+    overflow: hidden;
+    position: relative;
+
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.navMobile {
+    margin: 0;
+    padding: 0;
+    display: none; 
+}
+
+#icon {
+    display: block;
+    margin-left: 5%;
+
+}
+
+#mobileTop {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+    position: relative;
+}
+
+nav li {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 0;
+
+}
+
+nav a {
+    display: block;
+    padding: .9rem 0;
+    text-decoration: none;
+    color: black;
+}
+
+#icon a:hover {
+    color: black;
+}
+
+
+.active {
+    background-color: lighten($navColor, 60%)
+}
+
+//Main settings
+body {
+    margin: 0;
+}
+
+main {
+    margin: 1.5rem 0 0 2%;
+
+}
+
+main h1 {
+    font-family: $fontFamily2;
+    margin-left: .5rem;
+}
+
+main,
+h2,
+p {
+    margin: 0;
+    font-family: $fontFamily;
+}
+
+
+//Footer settings
+
+div#footerWrapper {
+    background-color: black;
+}
+
+div.social {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+div.social a {
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: lighten($color: #000000, $amount: 10%)
+}
+
+footer {
+    padding: .5rem 0;
+    color: black;
+    margin-top: 3rem;
+    text-align: center;
+
+}
+
+footer p {
+    text-align: center;
+    font-size: .6rem;
+}
