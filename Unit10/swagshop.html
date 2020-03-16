@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,22 +10,25 @@
         integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <title>10 Swag Shop</title>
 </head>
+
 <body>
 
     <div id="headWrapper">
         <header>
-            <div>
-                <!-- Need a logo here, flexed -->
+            <a href="swagshop.html">
+                <div>
+                    <img src="/Unit10/assets/Artboard 1.png" alt="Greater News Agency" srcset="/Unit10/assets/Artboard1.png,
+                /Unit10/assets/Artboard1@2x 2x, /Unit10/assets/Artboard1@3x.png 3x">
+                </div>
                 <h1>Swag Shop</h1>
-            </div>
-
+            </a>
         </header>
     </div>
 
     <nav>
         <div id="mobileTop">
             <a href="javascript:void(0);" id="icon" onclick="myFunction()">
-                <i id="menu" class="fa fa-bars"></i>
+                <i id="menu" class="fa fa-bars"> OPEN</i>
             </a>
 
         </div>
@@ -40,6 +44,56 @@
 
     <main>
 
+        <h1>Order</h1>
+
+        <form method="GET" action="thanks.html">
+            <fieldset>
+                <legend>
+                    Customer Information
+                </legend>
+                <label>Full Name*<input type="text" name="fname" required></label>
+                <label>Phone*<input type="tel" name="phone" required></label>
+                <label>Email<input type="email" name="email"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Swag Information
+                </legend>
+                <label>Date Needed<input type="date" name="fname" ></label>
+                <label>Business Name<input type="text" name="phone" ></label>
+                <label>Business URL<input type="URL" name="email"></label>
+                <label for="colorSelect">Color</label>
+                <select name="color" id="colorSelect">
+                    <option value="">PLEASE SELECT</option>
+                    <option id="blueSelect" value="blue">Blue</option>
+                    <option id="redSelect" value="red">Red</option>
+                    <option id="greenSelect" value="green">Green</option>
+                    <option id="cyanSelect" value="cyan">Cyan</option>
+                    <option id="yellowSelect" value="yellow">Yellow</option>
+                    <option id="blackSelect" value="black">Cyan</option>
+                </select>
+                <label for="material" id="material">Material</label>
+                <label class="aRadio"><input type="radio" name="material" value="aluminum" checked>Aluminum</label>
+                <label class="aRadio"><input type="radio" name="material" value="plastic" >Plastic</label>
+                <label>Quantity<input type="number" name="phone"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Payment Information
+                </legend>
+                <label>Name on Card*<input type="text" name="fname" pattern="{14-16}" required ></label>
+                <label>Card number*<input type="number" name="phone" required></label>
+                <label>Expiration date*<input type="date" name="email"required></label>
+            </fieldset>
+
+            <button>ORDER MY SWAG</button>
+
+
+
+
+        </form>
 
 
 
@@ -53,4 +107,5 @@
 
     <script src="swagshop.js"></script>
 </body>
+
 </html>
