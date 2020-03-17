@@ -17,7 +17,7 @@
         <header>
             <a href="swagshop.html">
                 <div>
-                    <img src="/Unit10/assets/Artboard 1.png" alt="Big Green Threads" srcset="/Unit10/assets/Artboard1.png,
+                    <img src="/Unit10/assets/Artboard1.png" alt="Big Green Threads" srcset="/Unit10/assets/Artboard1.png,
                 /Unit10/assets/Artboard1@2x 2x, /Unit10/assets/Artboard1@3x.png 3x">
                 </div>
                 <h1>Swag Shop</h1>
@@ -28,7 +28,7 @@
     <nav>
         <div id="mobileTop">
             <a href="javascript:void(0);" id="icon" onclick="myFunction()">
-                <i id="menu" class="fa fa-bars"> OPEN</i>
+                <i id="menu" class="fa fa-bars"></i>
             </a>
 
         </div>
@@ -36,11 +36,22 @@
             <li><a href="#">Home</a></li>
             <li><a href="#">Products</a></li>
             <li> <a href="#">Deals</a></li>
-            <li class="active"><a href="#">Order</a></li>
+            <li class="active" id="order" onmouseover="myFunction3()" onmouseout="myFunction3()" onclick="myFunction2()"><a href="#">Order</a>
+                <div id="origin">
+                    <ul id="orderSublink">
+                    <li><a href="#">Water bottles</a></li>
+                    <li><a href="#">Hats</a></li>
+                    <li><a href="#">Shirts</a></li>
+                </ul>
+            </div>
+            </li>
             <li><a href="#">Customer Reviews</a></li>
         </ul>
 
     </nav>
+
+<div id="fakeIt" onmouseover="myFunction3()" onmouseout="myFunction3()"></div>
+
 
     <main>
 
@@ -60,8 +71,8 @@
                 <legend>
                     Swag Information
                 </legend>
-                <label>Date Needed<input type="date" name="fname" ></label>
-                <label>Business Name<input type="text" name="phone" ></label>
+                <label>Date Needed<input type="date" name="fname"></label>
+                <label>Business Name<input type="text" name="phone"></label>
                 <label>Business URL<input type="URL" name="email"></label>
                 <label for="colorSelect">Color</label>
                 <select name="color" id="colorSelect">
@@ -75,7 +86,7 @@
                 </select>
                 <label for="material" id="material">Material</label>
                 <label class="aRadio"><input type="radio" name="material" value="aluminum" checked>Aluminum</label>
-                <label class="aRadio"><input type="radio" name="material" value="plastic" >Plastic</label>
+                <label class="aRadio"><input type="radio" name="material" value="plastic">Plastic</label>
                 <label>Quantity<input type="number" name="phone"></label>
             </fieldset>
 
@@ -83,9 +94,9 @@
                 <legend>
                     Payment Information
                 </legend>
-                <label>Name on Card*<input type="text" name="fname" pattern="{14-16}" required ></label>
+                <label>Name on Card*<input type="text" name="fname" pattern="{14-16}" required></label>
                 <label>Card number*<input type="number" name="phone" required></label>
-                <label>Expiration date*<input type="date" name="email"required></label>
+                <label>Expiration date*<input type="date" name="email" required></label>
             </fieldset>
 
             <button>ORDER MY SWAG</button>
