@@ -37,3 +37,5 @@ function myFunction3() {
     origin.appendChild(x);
   }
 }
+
+window.onresize = function(){ location.reload(); }
