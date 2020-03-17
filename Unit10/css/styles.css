@@ -647,7 +647,8 @@ footer p {
     list-style-type: none;
     text-decoration: none;
     color: white;
-    background-color: #5f6e94; }
+    background-color: #5f6e94;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.404); }
 
   #orderSublink a {
     list-style-type: none;
