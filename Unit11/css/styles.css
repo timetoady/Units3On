@@ -392,7 +392,7 @@ template {
 header {
   padding: 1rem 0 .5rem .5rem;
   color: black;
-  background-color: #fafffa; }
+  background-color: white; }
 
 header a {
   display: flex;
@@ -406,13 +406,12 @@ header h1 {
   margin: 1.5rem 0 0 4%; }
 
 header img {
-  border: 2px black solid;
-  border-radius: 5%; }
+  max-width: 96%; }
 
 nav {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
-  background-color: #002070bb; }
+  background-color: #406BA4; }
 
 nav ul {
   margin: 0;
@@ -450,7 +449,7 @@ nav a {
   color: white; }
 
 #myLinks a:hover {
-  background-color: #7c8ebd; }
+  background-color: #77BD37; }
 
 #myLinks li:hover {
   display: block; }
@@ -468,14 +467,15 @@ main {
   margin: 1.5rem 0 0 2%; }
 
 main h1 {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin-left: .5rem; }
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
 
 main,
 h2,
 p {
-  margin: 0;
   font-family: "Roboto", sans-serif; }
+
+main img {
+  max-width: 96%; }
 
 div#footerWrapper {
   background-color: black; }
@@ -485,7 +485,8 @@ footer {
   color: black;
   margin-top: 3rem;
   text-align: center;
-  background-color: #fafffa; }
+  background-color: #553483;
+  color: white; }
 
 footer p {
   text-align: center;
@@ -494,6 +495,9 @@ footer p {
 @media only screen and (min-width: 560px) {
   nav {
     overflow: unset; }
+
+  header img {
+    max-width: 50%; }
 
   header h1 {
     font-size: 1.9rem;
@@ -516,54 +520,6 @@ footer p {
   #xBack {
     display: none; }
 
-  #orderSublink {
-    overflow: hidden;
-    text-align: left;
-    display: block; }
-
-  #fakeIt {
-    margin-left: 13.6rem;
-    position: absolute;
-    opacity: 1;
-    padding: 0 0 0 .4rem !important; }
-
-  @keyframes fadeIn {
-    0% {
-      opacity: 0; }
-    100% {
-      opacity: 1; } }
-  #fakeIt ul {
-    padding: 0;
-    margin: 0; }
-
-  #fakeIt a {
-    display: block; }
-
-  #myLinks li.active > a::after {
-    margin-top: .3rem; }
-
-  #orderSublink li {
-    margin-left: 0;
-    padding: .3rem .3rem .3rem .5rem !important;
-    list-style-type: none;
-    text-decoration: none;
-    color: white;
-    background-color: #5f6e94;
-    border-bottom: 2px solid rgba(128, 128, 128, 0.404); }
-
-  #orderSublink a {
-    list-style-type: none;
-    text-decoration: none;
-    color: white; }
-
-  #fakeIt li:hover, #fakeIt a:hover {
-    background-color: #7c8ebd; }
-
-  #myLinks li.active > a::after {
-    content: "\25BC";
-    font-size: .75rem;
-    margin-left: .3rem; }
-
   #mobileTop {
     display: none; }
 
@@ -572,13 +528,7 @@ footer p {
 
   header h2 {
     font-size: 1.8rem;
-    margin: 0 0 .5rem .5rem; }
-
-  button {
-    margin-left: 3%;
-    padding: .3rem .5rem;
-    width: 96%;
-    max-width: 12rem; } }
+    margin: 0 0 .5rem .5rem; } }
 @media only screen and (min-width: 1025px) {
   body, main, nav, header, footer {
     max-width: 64rem;
