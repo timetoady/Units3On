@@ -1,12 +1,56 @@
+#grider{
+  grid-template-areas:
+  "theHeader theHeader" 
+  "theNav theMain" 
+  "theFooter theFooter";
+  
+}
+
+#mainNav{
+  height: auto;
+}
+
 nav {
   overflow: unset;
+
+}
+
+.oneTablet{
+  display: grid;
+  h2 {grid-area: title};
+  img {grid-area: theImage};
+  p {grid-area: para};
+  grid-template-areas:
+  "title title theImage" 
+  "para para theImage" 
+  "para para theImage";
+  margin-bottom: 1rem;
+}
+
+.twoTablet{
+  display: grid;
+  h2 {grid-area: title};
+  img {grid-area: theImage};
+  p {grid-area: para};
+  grid-template-areas:
+  "theImage title title" 
+  "theImage para para " 
+  "theImage para para";
+
+}
+
+.oneTablet h2, .twoTablet h2{
+  margin: 0;
+}
+
+.oneTablet p, .twoTablet p {
+  margin-top: .3rem;
 }
 
 header img {
   max-width: 50%;
 
 }
-
 
 header h1 {
   font-size: 1.9rem;
@@ -21,7 +65,7 @@ nav li {
 nav ul {
   margin: 0;
   padding: 0;
-  display: flex;
+  
 }
 
 nav a {
@@ -42,7 +86,6 @@ nav a {
 
 header h1 {
   font-size: 3.5rem;
-
 }
 
 header h2 {

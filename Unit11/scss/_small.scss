@@ -43,7 +43,7 @@ nav ul {
 .navMobile {
     margin: 0;
     padding: 0;
-    
+
 }
 
 #icon {
@@ -51,8 +51,8 @@ nav ul {
     margin-left: 5%;
 }
 
-#xBack{
-    text-align: right;
+#xBack {
+
     display: inline-block;
     margin-left: 6.1%;
 }
@@ -61,7 +61,7 @@ nav ul {
     display: flex;
     justify-content: space-between;
     padding: .2rem;
-    
+
 }
 
 nav li {
@@ -70,7 +70,6 @@ nav li {
     font-size: 1.3rem;
     text-align: left;
     padding: 0;
-    
 
 }
 
@@ -81,12 +80,12 @@ nav a {
     color: white;
 }
 
-#myLinks a:hover{
+#myLinks a:hover {
     background-color: #77BD37;
 }
 
 #myLinks li:hover {
-    display:block;
+    display: block;
 }
 
 #icon a:hover {
@@ -103,28 +102,63 @@ body {
 }
 
 main {
-    margin: 1.5rem 0 0 2%;
-    // padding-left: 2%;
+    padding: 0 2% 0 2%;
+    
 }
 
 main h1 {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 0;
 }
 
 main,
 h2,
 p {
-    // margin: 0;
     font-family: $fontFamily;
 }
 
+main p{
+    margin-bottom: 1rem;
+}
 
-main img{
-    max-width: 96%;
+
+main img {
+    max-width: 98%;
 }
 
 //Grid settings
 
+#mobileTop {
+    grid-area: hamburger;
+}
+
+#headWrapper {
+    grid-area: theHeader
+}
+
+#mainNav {
+    grid-area: theNav;
+    height: 100vh;
+}
+
+main {
+    grid-area: theMain
+}
+
+footer {
+    grid-area: theFooter
+}
+
+
+#grider {
+    display: grid;
+    grid-template-areas:
+        "hamburger"
+        "theHeader"
+        "theMain"
+        "theFooter"
+        "theNav";
+}
 
 
 //Footer settings
@@ -136,11 +170,11 @@ div#footerWrapper {
 footer {
     padding: .5rem 0;
     color: black;
-    margin-top: 3rem;
+    // margin-top: 3rem;
     text-align: center;
     background-color: #553483;
     color: white;
-    
+
 
 }
 
