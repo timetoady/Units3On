@@ -1,0 +1,146 @@
+//Header settings
+
+header {
+    padding: 1rem 0 .5rem .5rem;
+    color: black;
+    background-color: rgb(250, 255, 250);
+
+
+}
+
+header a {
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: none;
+    color: black;
+}
+
+header h1 {
+    font-size: 1.9rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 1.5rem 0 0 4%;
+}
+
+header img {
+    border: 2px black solid;
+    border-radius: 5%;
+}
+
+//Navigation settings
+
+nav {
+    font-family: $fontFamily;
+    font-weight: 100;
+    // overflow: hidden;
+    // position: relative;
+    background-color: #002070bb;
+
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.navMobile {
+    margin: 0;
+    padding: 0;
+    
+}
+
+#icon {
+    display: block;
+    margin-left: 5%;
+}
+
+#xBack{
+    text-align: right;
+    display: inline-block;
+    margin-left: 6.1%;
+}
+
+#mobileTop {
+    display: flex;
+    justify-content: space-between;
+    padding: .2rem;
+    
+}
+
+nav li {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-align: left;
+    padding: 0;
+    
+
+}
+
+nav a {
+    display: block;
+    padding: .4rem .8rem;
+    text-decoration: none;
+    color: white;
+}
+
+#myLinks a:hover{
+    background-color: #7c8ebd;
+}
+
+#myLinks li:hover {
+    display:block;
+}
+
+#icon a:hover {
+    color: black;
+}
+
+.active {
+    background-color: #5f6e94;
+}
+
+//Main settings
+body {
+    margin: 0;
+}
+
+main {
+    margin: 1.5rem 0 0 2%;
+
+}
+
+main h1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: .5rem;
+}
+
+main,
+h2,
+p {
+    margin: 0;
+    font-family: $fontFamily;
+}
+
+//Grid settings
+
+
+
+//Footer settings
+
+div#footerWrapper {
+    background-color: black;
+}
+
+footer {
+    padding: .5rem 0;
+    color: black;
+    margin-top: 3rem;
+    text-align: center;
+    background-color: rgb(250, 255, 250);
+
+}
+
+footer p {
+    text-align: center;
+    font-size: .6rem;
+}
