@@ -43,6 +43,15 @@ header h2 {
     margin: 0 0 .5rem 1rem;
 }
 
+main h1{
+    font-size: 2.5rem;
+}
+
+main h2{
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
+
 nav ul {
     margin: 0 0 0 1rem;
     padding: 0;
@@ -59,10 +68,15 @@ nav a {
     padding: .6rem;
 }
 
+.twoTablet{
+    margin-bottom: 2rem;
+}
+
 .oneTablet h2, .twoTablet h2{
     margin: 0;
   }
   
   .oneTablet p, .twoTablet p {
     margin-top: .3rem;
+    font-size: 1.2rem;
   }
