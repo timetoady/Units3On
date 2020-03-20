@@ -390,7 +390,7 @@ template {
   display: none; }
 
 header {
-  padding: 1rem 0 .5rem .5rem;
+  padding: 0;
   color: black;
   background-color: white; }
 
@@ -606,7 +606,8 @@ footer p {
     grid-template-areas: "title title theImage"  "theImage title title "  "para para theImage"; }
 
   header {
-    background-size: cover; }
+    background-size: cover;
+    padding-left: .6rem; }
 
   header h1 {
     font-size: 3.5rem;
