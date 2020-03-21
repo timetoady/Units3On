@@ -17,8 +17,8 @@ fetch(apiURL)
         let phone = document.createElement("p");
         hotelImg.src = `/Unit12/assets/${hotel.picture}`;
         hotelName.textContent = hotel.name;
-        phone.innerHTML = `<ion-icon name="call" class="icons2"></ion-icon> ${hotel.phoneNum}`;
-        address.innerHTML = `<ion-icon name="map" class="icons2"></ion-icon> ${hotel.address}`;
+        phone.innerHTML = `<ion-icon name="call" class="icons2"></ion-icon> ${hotel.phoneNum} `;
+        address.innerHTML = `<ion-icon name="map" class="icons2"></ion-icon> <p>${hotel.address}</p> \n ${hotel.address2}`;
         mainArea.appendChild(hotelSec);
         hotelSec.appendChild(hotelFig);
         hotelFig.appendChild(hotelImg);

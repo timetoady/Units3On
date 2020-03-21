@@ -4,7 +4,8 @@
             "rooms": "75",
             "gym": "Yes",
             "roomTypes": ["King", "Queen", "Double"],
-            "address": "136 Hotel Way \n Suplex, GA 12345",
+            "address": "136 Hotel Way",
+            "address2": "Suplex, GA 12345",
             "picture": "hotel1.jpg",
             "phoneNum": "+1-385-555-1234"
         },
@@ -13,7 +14,8 @@
             "rooms": "23",
             "gym": "No",
             "roomTypes": ["King", "Queen", "Prince"],
-            "address": "555 Astreet RD\n Muscle, VA 99999",
+            "address": "555 Astreet RD",
+            "address2": "Muscle, VA 99999",
             "picture": "hotel2.jpg",
             "phoneNum": "+1-385-555-1234"
         },
@@ -22,7 +24,8 @@
             "rooms": "15",
             "gym": "Yes",
             "roomTypes": ["California King", "Double Queen", "Double-Double"],
-            "address": "354 Short LN  \n North, UT 99999",
+            "address": "354 Short LN",
+            "address2": "North, UT 99999",
             "picture": "hotel3.jpg",
             "phoneNum": "+1-385-555-5678"
         },
@@ -32,7 +35,8 @@
             "rooms": "15",
             "gym": "Yes",
             "roomTypes": ["California King", "Double Queen", "Double-Double"],
-            "address": "123 Rich Guy LN\n Gone, AL 99999",
+            "address": "123 Rich Guy LN",
+            "address2": " Gone, AL 99999",
             "picture": "hotel4.jpg",
             "phoneNum": "+1-385-555-9101"
         }
