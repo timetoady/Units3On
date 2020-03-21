@@ -465,7 +465,9 @@ body {
 figure {
   position: relative;
   margin: 0;
-  width: 100%; }
+  padding: 0;
+  width: 100%;
+  background-color: rgba(122, 122, 122, 0.288); }
 
 figure img {
   width: 100%; }
@@ -491,17 +493,19 @@ p {
   display: grid;
   grid-template-columns: 3fr 2fr;
   max-width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: rgba(128, 128, 128, 0.329);
+  padding: .2rem; }
 
 div.hotel p {
-  font-size: .9rem;
+  font-size: .7rem;
   margin: 0;
   width: 100%; }
 
 .icons2 {
   font-size: 1.4rem;
   float: left;
-  padding-right: .2rem; }
+  padding: 0 .2rem; }
 
 @media only screen and (min-width: 560px) {
   #display {
@@ -523,7 +527,7 @@ div.hotel p {
 
   div.hotel p {
     max-width: 100%;
-    font-size: .75rem; } }
+    font-size: .78rem; } }
 @media only screen and (min-width: 1024px) {
   body, main, nav, header, footer {
     max-width: 55rem;
