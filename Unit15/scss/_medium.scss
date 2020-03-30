@@ -1,0 +1,42 @@
+header h1 {
+  font-size: 3.5rem;
+
+}
+
+#townNameDiv {
+  margin: .5rem 0 0 2%;
+
+}
+
+#townName {
+  font-size: 3rem;
+}
+
+#forecast {
+  margin: 0 2%;
+  text-align: center;
+  display: flex;
+  flex-flow: wrap;
+
+}
+
+
+.dayDiv {
+  border: 2px solid black;
+  margin: .5rem auto;
+  min-width: 31%;
+
+
+}
+
+.dayNameDiv {
+  border: 1px solid black;
+  color: white;
+  background-color: #1E29AE;
+
+}
+
+img {
+  width: 30%;
+
+}
