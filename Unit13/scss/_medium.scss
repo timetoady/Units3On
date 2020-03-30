@@ -1,33 +1,44 @@
 
-#display {
-  grid-template-columns: 1fr 1fr;
+header h1{
+  font-size: 3.5rem;
+
 }
 
-header h2 {
+#townNameDiv{
+  margin: .5rem 0 0 2%;
+ 
+}
+
+#townName{
+  font-size: 3rem;
+}
+
+#forcast{
+  margin: 0 2%;
+  text-align: center;
+  display: flex;
+  flex-flow: wrap;
+
+}
+
+
+.dayDiv {
+  border: 2px solid black;
+  margin: .5rem auto;
+  min-width: 31%;
   
-  margin: 0;
+
 }
 
-nav li {
-  font-size: 1.3rem;
-}
-
-nav a {
-  font-size: .8rem;
-}
-
-.icons{
-  font-size: 1.4rem;
-  display: block;
-  margin: 0 auto;
+.dayNameDiv{
+  border: 1px solid black;
+  color: white;
+  background-color: #1E29AE;
   
 }
 
-
-div.hotel p { 
-  max-width: 100%;
-  font-size: .78rem;
+img {
+  width: 30%;
+  
 }
-
-
 

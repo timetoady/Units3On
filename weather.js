@@ -43,8 +43,8 @@ fetch(apiURL)
             forcast.appendChild(dayDiv);
             dayDiv.appendChild(dayNameDiv);
             dayNameDiv.appendChild(dayName);
-            forcast.appendChild(theTemp);
-            forcast.appendChild(icon)
+            dayDiv.appendChild(theTemp);
+            dayDiv.appendChild(icon)
             console.log(`The noontime temperature in ${name.textContent} for ${weekdays[forcastDayNumber]} is ${report.main.temp}° F`)
 
         }

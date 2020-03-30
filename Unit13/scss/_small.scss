@@ -45,6 +45,7 @@ nav {
 //Main settings
 body {
     margin: 0;
+    font-family: $fontFamily;
 }
 
 #townNameDiv{
@@ -58,6 +59,7 @@ body {
 #townName{
     margin: 0;
     padding: .3rem 0 2rem .5rem;
+    text-align: center;
 }
 
 #forcast{
@@ -68,16 +70,19 @@ body {
 
 .dayDiv {
     border: 2px solid black;
-    margin: 3rem auto;
-    background-color: #1E29AE;
+    margin: 2rem auto;
+    
 
 }
 
 .dayNameDiv{
-    border: 2px solid black;
+    border: 1px solid black;
     color: white;
+    background-color: #1E29AE;
+    
 }
 
 img {
     width: 25%;
+    margin-bottom: 5%;
 }

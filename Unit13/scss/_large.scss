@@ -1,42 +1,46 @@
-body, main, nav, header, footer{
-    max-width: 55rem;
+main, footer{
+    max-width: 60rem;
     margin: 0 auto;
     
 }
 
-header {
-    background-size: cover;
+// 
 
-}
-
-header h1 {
-    font-size: 2.5rem;
-    margin-left: 1rem;
-}
-
-header h2 {
-    font-size: 1.8rem;
-    margin: 0 0 .5rem 1rem;
-}
-
-nav ul {
-    margin: 0 0 0 1rem;
-    padding: 0;
-    display: flex;
-}
-
-nav li {
-    font-size: 1.6rem;
-    padding: 0;
-}
-
-nav a {
-    display: block;
-    padding: .6rem;
-}
-
-
-div.hotel p { 
-    font-size: .9rem;
-
+ 
+  #townNameDiv{
+    margin: .5rem 0 0 2%;
+   
   }
+  
+  #townName{
+    font-size: 3rem;
+  }
+  
+  #forcast{
+    margin: 0 2%;
+    text-align: center;
+    display: flex;
+    flex-flow: wrap;
+  }
+  
+  
+  .dayDiv {
+    border: 2px solid black;
+    margin: 2rem auto;
+    min-width: 19%;
+    
+  
+  }
+  
+  .dayNameDiv{
+    border: 1px solid black;
+    color: white;
+    background-color: #1E29AE;
+    
+  }
+  
+  img {
+    width: 30%;
+  }
+  
+  
