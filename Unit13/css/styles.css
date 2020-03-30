@@ -411,15 +411,6 @@ header h2 {
   text-shadow: -1px 1px 1px white;
   margin: 0; }
 
-nav {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  position: fixed;
-  background-color: #002070;
-  width: 100%;
-  bottom: 0;
-  z-index: 999; }
-
 body {
   margin: 0;
   font-family: "Roboto", sans-serif; }
@@ -435,7 +426,7 @@ body {
   padding: .3rem 0 2rem .5rem;
   text-align: center; }
 
-#forcast {
+#forecast {
   margin: 0 2%;
   text-align: center; }
 
@@ -462,7 +453,7 @@ img {
   #townName {
     font-size: 3rem; }
 
-  #forcast {
+  #forecast {
     margin: 0 2%;
     text-align: center;
     display: flex;
@@ -481,7 +472,8 @@ img {
   img {
     width: 30%; } }
 @media only screen and (min-width: 1024px) {
-  main, footer {
+  main,
+  footer {
     max-width: 60rem;
     margin: 0 auto; }
 
@@ -490,12 +482,6 @@ img {
 
   #townName {
     font-size: 3rem; }
-
-  #forcast {
-    margin: 0 2%;
-    text-align: center;
-    display: flex;
-    flex-flow: wrap; }
 
   .dayDiv {
     border: 2px solid black;

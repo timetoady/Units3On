@@ -1,19 +1,18 @@
-
-header h1{
+header h1 {
   font-size: 3.5rem;
 
 }
 
-#townNameDiv{
+#townNameDiv {
   margin: .5rem 0 0 2%;
- 
+
 }
 
-#townName{
+#townName {
   font-size: 3rem;
 }
 
-#forcast{
+#forecast {
   margin: 0 2%;
   text-align: center;
   display: flex;
@@ -26,19 +25,18 @@ header h1{
   border: 2px solid black;
   margin: .5rem auto;
   min-width: 31%;
-  
+
 
 }
 
-.dayNameDiv{
+.dayNameDiv {
   border: 1px solid black;
   color: white;
   background-color: #1E29AE;
-  
+
 }
 
 img {
   width: 30%;
-  
-}
 
+}

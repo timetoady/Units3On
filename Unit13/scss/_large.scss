@@ -1,46 +1,34 @@
-main, footer{
+main,
+footer {
     max-width: 60rem;
     margin: 0 auto;
-    
+
 }
 
-// 
-
- 
-  #townNameDiv{
+#townNameDiv {
     margin: .5rem 0 0 2%;
-   
-  }
-  
-  #townName{
+
+}
+
+#townName {
     font-size: 3rem;
-  }
-  
-  #forcast{
-    margin: 0 2%;
-    text-align: center;
-    display: flex;
-    flex-flow: wrap;
-  }
-  
-  
-  .dayDiv {
+}
+
+.dayDiv {
     border: 2px solid black;
     margin: 2rem auto;
     min-width: 19%;
-    
-  
-  }
-  
-  .dayNameDiv{
+
+
+}
+
+.dayNameDiv {
     border: 1px solid black;
     color: white;
     background-color: #1E29AE;
-    
-  }
-  
-  img {
+
+}
+
+img {
     width: 30%;
-  }
-  
-  
+}
