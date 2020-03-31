@@ -1,42 +1,33 @@
-header h1 {
-  font-size: 3.5rem;
 
+nav{
+  align-self: right;
+  
+  
 }
 
-#townNameDiv {
-  margin: .5rem 0 0 2%;
-
-}
-
-#townName {
-  font-size: 3rem;
-}
-
-#forecast {
-  margin: 0 2%;
-  text-align: center;
+nav ul{
   display: flex;
-  flex-flow: wrap;
+  justify-content: right;
+  float: right;
+  margin: 0 0 .2rem 0;
+
+  
+  
 
 }
 
-
-.dayDiv {
-  border: 2px solid black;
-  margin: .5rem auto;
-  min-width: 31%;
-
+nav li{
+  padding-left: 1rem;
+  font-size: 14pt;
+  
 
 }
 
-.dayNameDiv {
-  border: 1px solid black;
-  color: white;
-  background-color: #1E29AE;
-
+nav a {
+  font-size: $navSize
 }
 
-img {
-  width: 30%;
 
+#barWrapper{
+  background-color: black;
 }

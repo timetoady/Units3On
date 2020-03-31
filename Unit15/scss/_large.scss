@@ -1,34 +1,11 @@
 main,
-footer {
-    max-width: 60rem;
+header,
+nav,
+footer,
+#blackBar,
+#hero,
+#partners {
+    max-width: 900px;
     margin: 0 auto;
 
-}
-
-#townNameDiv {
-    margin: .5rem 0 0 2%;
-
-}
-
-#townName {
-    font-size: 3rem;
-}
-
-.dayDiv {
-    border: 2px solid black;
-    margin: 2rem auto;
-    min-width: 19%;
-
-
-}
-
-.dayNameDiv {
-    border: 1px solid black;
-    color: white;
-    background-color: #1E29AE;
-
-}
-
-img {
-    width: 30%;
 }
