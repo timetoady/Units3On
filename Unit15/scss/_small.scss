@@ -4,7 +4,16 @@
 body {
     margin: 0;
     font-family: $fontFamily;
-    background-color: $primaryBackground;
+    // background-color: $primaryBackground;
+}
+
+main,
+footer,
+#blackBar,
+#partners {
+    padding-right: 2%;
+    padding-left: 2%;
+
 }
 
 header {
@@ -24,8 +33,6 @@ header h3{
 color:$primaryColor
 }
 
-
-
 #upperName{
     margin: 0;
     padding: 0;
@@ -39,32 +46,185 @@ color:$primaryColor
     size: .5;
 }
 
-nav li{
+#mobileTop {
+    display: flex;
+    justify-content: space-between;
+    padding: .2rem;
+
+}
+
+#myLinks{
+    display:none;
+}
+
+nav{
+  overflow: hidden;
+  position: relative;
+}
+
+#mainNav li{
     list-style-type: none;
     text-emphasis: none;
     text-decoration: none;
 
 }
 
-nav a{
+#mainNav a{
     text-emphasis: none;
     text-decoration: none;
     color: $navColor
 }
 
 .icons{
-    margin: 0 .3rem -.1rem 0;
+    margin: 0 .1rem -.05rem 0;
     padding: 0;
-    font-size: 1rem;
+    
 }
 
 //Hero image
 
 #hero img {
     width: 100%;
+    
 }
 
 
+//Black bar
+
+#barWrapper{
+    background-color: black;
+  }
+
+#blackBar{
+    color: white;
+    padding: 1rem 2%;
+    // display: flex;
+    // justify-content: space-between;
+    // font-size: 50%;
+    
+}
+
+#blackBar p {
+    font-style: italic;
+    font-size: 12pt;
+}
+
+#blackBar h2{
+    color: $yellowText;
+    font-style: italic;
+    margin-top: .5rem;
+    
+}
+
+#blackBar h3{
+    margin-bottom: .5rem;
+    color: $yellowText;
+}
+
+#blackBar h4{
+    margin: .2rem;
+}
+
+#blackRight{
+    text-align: center;
+    min-width: 20%;
+    margin-top: 2rem;
+}
+
+
+//About Us section
+
+#aboutUs p{
+    font-size: 12pt;
+    color: $navColor;
+    
+}
+
+#aboutGrid{
+ display: grid;
+ border-top: 1px gray solid;
+ padding: .80rem 0;
+ gap: 1rem;
+ background-image: url("/Unit15/assets/glowCopy.jpg");
+ background-repeat: no-repeat;
+ background-size: contain;
+
+}
+
+#aboutGrid img{
+    width: 100%;
+}
+
+
+#aboutUs h2{
+    color: $titleBlue;
+    margin: 2rem 0 0 0
+}
+
+#aboutUs h3{
+    color: $titleBlue;
+    margin: .8rem 0 0 0;
+}
+
+#aboutUs p{
+    margin-top: .2rem;
+}
+
+//Graphs section
+
+#graphs{
+    display: grid;
+    border-top: 1px gray solid;
+    padding: .80rem 0;
+    gap: 1rem;
+    background-image: url("/Unit15/assets/glowCopy.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#graphs p{
+    color: #a8a8b2;
+    font-size: 12pt;
+    margin: 0;
+}
+
+#graphs img{
+    width: 100%;
+}
+
+#graphs h2{
+    color: $titleBlue;
+    margin: 2rem 0 0 0
+}
+
+#graphs h3{
+    color: $titleBlue;
+    margin: .8rem 0 0 0;
+}
+
+#graphs p{
+    margin-top: .2rem;
+}
+
+#graphs h5{
+    font-size: 13pt;
+    font-weight: 400;
+    color: #a8a8b2;
+}
+
+#graphGrid4{
+    text-align: center;
+    border: 1px gray solid;
+}
+
+#graphGrid4 button{
+    background-color: $titleBlue;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    padding: .2rem 2.7rem;
+}
 
 //footer items
 
@@ -80,9 +240,15 @@ nav a{
 }
 
 div#footerWrapper{
-background-color: blue;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0481ad+1,034d72+100 */
+background: rgb(4,129,173); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(4,129,173,1) 1%, rgba(3,77,114,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(4,129,173,1) 1%,rgba(3,77,114,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(4,129,173,1) 1%,rgba(3,77,114,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0481ad', endColorstr='#034d72',GradientType=0 ); /* IE6-9 */
+
 color: white;
-margin-top: -4.5px;
+margin-top: -4px;
 }
 
 

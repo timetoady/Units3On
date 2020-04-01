@@ -1,33 +1,124 @@
 
+main,
+footer,
+#partners {
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+#mobileTop{
+  display: none;
+}
+
 nav{
   align-self: right;
-  
+  padding-right: .5rem;
+  overflow: unset;
   
 }
 
-nav ul{
+#myLinks{
+  display:block;
+}
+
+#mainNav ul{
   display: flex;
   justify-content: right;
   float: right;
   margin: 0 0 .2rem 0;
-
-  
-  
 
 }
 
 nav li{
   padding-left: 1rem;
   font-size: 14pt;
-  
 
 }
 
-nav a {
-  font-size: $navSize
+#mainNav a {
+  font-size: $navSize;
+  display: block;
 }
 
+//Black bar
 
 #barWrapper{
   background-color: black;
+}
+
+#blackBar{
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+#blackBar ul{
+  margin-left: 3rem;
+}
+
+#blackBar p {
+  font-style: italic;
+  font-size: 12pt;
+}
+
+#blackBar h2{
+  color: $yellowText;
+  font-style: italic;
+  margin-top: .5rem;
+  
+}
+
+#blackBar h3{
+  margin-bottom: .5rem;
+  color: $yellowText
+}
+
+#blackBar h4{
+  margin: .2rem;
+}
+
+#blackRight{
+  text-align: right;
+  min-width: 20%;
+  margin-top: 0;
+}
+
+#aboutGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ }
+
+
+
+#graphGrid1 {
+  grid-area: graphgrid1;
+  height: 100%;
+}
+
+#graphGrid2 {
+  grid-area: graphgrid2;
+  height: 100%;
+}
+
+#graphGrid3 {
+  grid-area: graphgrid3;
+}
+
+#graphGrid3 h3{
+  margin: 0;
+}
+
+#graphGrid4{
+  text-align: center;
+  border: none;
+  grid-area: graphgrid4;
+}
+
+#graphs{
+  gap: .5rem;
+  grid-template-areas: 
+  "graphgrid1 graphgrid4 graphgrid2"
+  "graphgrid1 graphgrid4 graphgrid2" 
+  "graphgrid3 graphgrid3 graphgrid3" 
 }

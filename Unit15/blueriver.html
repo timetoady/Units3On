@@ -1,68 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/Unit15/css/styles.css" rel="stylesheet">
     <title>Blue River</title>
 </head>
+
 <body>
     <header>
-        <div><img src="/Unit15/assets/blueRiverIcon.jpg" alt="Header"></div>
+        <div>
+
+            <img src="/Unit15/assets/blueRiverIcon.jpg" alt="Header">
+
+        </div>
         <div id="upperName">
             <img id="logoRight" src="/Unit15/assets/logo2.png" alt="Blue river studios">
             <hr>
         </div>
-        
-        
+
+
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#"><ion-icon class="icons" name="bed"></ion-icon>HOME</a></li>
-            <li><a href="#"><ion-icon class="icons" name="bed"></ion-icon>PORTFOLIO</a></li>
-            <li><a href="#"><ion-icon class="icons" name="bed"></ion-icon>CONTACT</a></li>
+
+    <nav id="mainNav">
+
+        <div id="mobileTop">
+            <a href="javascript:void(0);" id="icon" onclick="myFunction()">
+                <ion-icon id="menu" name="menu"></ion-icon>
+            </a>
+        </div>
+
+        <ul id="myLinks">
+            <li><a href="#">
+                    <ion-icon class="icons" name="home"></ion-icon>HOME
+                </a></li>
+            <li><a href="#">
+                    <ion-icon class="icons" name="folder-open"></ion-icon>PORTFOLIO
+                </a></li>
+            <li><a href="#">
+                    <ion-icon class="icons" name="call"></ion-icon>CONTACT
+                </a></li>
         </ul>
     </nav>
+
     <div id="hero">
-        <img src="/Unit15/assets/BlueRiverStudiosHero.jpg" alt="Hero Image">
-        </div>
-        
-        <div id="barWrapper">
-        <section id="blackBar">
-        <h2>Here's where the black bar goes</h2>
-<main>
-
-
-
-</section>
-</div>
-
-<section id="aboutUs">
-
-
-
-</section>
-
-<section id="graphs">
-
-
-</section>
-
-<div id="partners">
-<img src="/Unit15/assets/brImgFooter.jpg" alt="Corporate partners">
-</div>
-
-
-
-
-</main>
-<div id="footerWrapper">
-    <footer>
-    <p>Call at 1-800-555-1234</p>
-    </footer>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/Unit15/assets/BlueRiverStudiosHerosmall.jpg">
+            <img src="/Unit15/assets/BlueRiverStudiosHero.jpg" alt="Hero Image">
+        </picture>
     </div>
 
-<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <div id="barWrapper">
+        <section id="blackBar">
+
+            <div id="blackLeft">
+                <h3>EXPECT THE BEST</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor rhoncus est sed lobortis. Nam
+                    aliquam nisi magna, nec accumsan metus euismod vel. Praesent at vestibulum nibh, eu tristique risus.
+                </p>
+                <ul>
+                    <li>Mobile First Design</li>
+                    <li>Masterful Graphivs</li>
+                    <li>Modern Desgins</li>
+                    <li>Marketing</li>
+
+                </ul>
+            </div>
+
+            <div id="blackRight">
+                <h3>OUR FORMULA</h3>
+                <h4>development</h4>
+                <h4>+ deployment</h4>
+                <h4>+ design</h4>
+                <h2>SUCCESS</h2>
+            </div>
+
+        </section>
+    </div>
+
+    <main>
+
+        <section id="aboutUs">
+            <div>
+                <h2>MORE ABOUT US</h2>
+            </div>
+            <div id="aboutGrid">
+
+                <div>
+                    <img src="/Unit15/assets/brImg1.jpg" alt="Our Persistance">
+                    <h3>Our Persistance</h3>
+                    <p>Sed, cursus, in nunc adipiscing phasellus in turpis etiam! Nec, placerat! Tortor, et et vel,
+                        nunc? Proin quis tincidunt scelerisque porttitor? Dapibus. Ultricies! Velit magna urna. Porta
+                        quis odio natoque arcu pulvinar aenean, ut pellentesque! Nec proin montes! Pid elit
+                        lacus.sagittis dignissim vut.</p>
+                </div>
+
+                <div>
+                    <img src="/Unit15/assets/brImg2.jpg" alt="Our Process">
+                    <h3>Our Process</h3>
+                    <p>In nunc adipiscing phasellus in turpis etiam! Nec, placerat! Tortor, et et vel, nunc? Proin quis
+                        tincidunt scelerisque porttitor? Dapibus. Ultricies! Velit magna urna. Porta quis odio natoque
+                        arcu pulvinar aenean, ut pellentesque! Nec proin montes! Pid elit lacus. Amet non facilisis
+                        massa.</p>
+                </div>
+
+                <div>
+                    <img src="/Unit15/assets/brImg3.jpg" alt="Our Process">
+                    <h3>Our People</h3>
+                    <p>Adipiscing phasellus in turpis etiam! Nec, placerat! Tortor, montes magna. Augue et pulvinar
+                        proin dapibus! Urna nec, pid purus, augue velit. Nunc, eu lorem et! Augue hac, diam phasellus,
+                        augue turpis velit, ac? Augue sagittis dignissim vut.</p>
+                </div>
+
+                <div>
+                    <img src="/Unit15/assets/brImg4.jpg" alt="Our Process">
+                    <h3>Our Payoff</h3>
+                    <p>Elit! Sed, cursus, in nunc adipiscing phasellus in turpis etiam! Nec, placerat! Tortor, et et
+                        vel, nunc? Proin quis tincidunt scelerisque porttitor? Dapibus! Urna nec, pid purus, augue
+                        velit. Nunc, eu lorem et! Augue hac, diam phasellus, augue turpis velit, ac? Augue sagittis
+                        dignissim vut.</p>
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+        <section id="graphs">
+
+            <div id="graphGrid1">
+                <img src="/Unit15/assets/brImg5.jpg" alt="Infrastructure">
+                <h3>Infrastructure</h3>
+                <p>Urna pid? Cras, eros risus mattis ridiculus tortor eu rhoncus porta lundium rhoncus massa porttitor,
+                    amet diam sociis dictumst elementum mid pulvinar. Lectus odio, nec turpis, et sagittis amet amet!
+                </p>
+            </div>
+
+            <div id="graphGrid2">
+                <img src="/Unit15/assets/brImg6.jpg" alt="Infrastructure">
+                <h3>Technology</h3>
+                <p>elementum mid pulvinar. Lectus odio, nec turpis, et sagittis amet amet Urna pid? Cras, eros risus
+                    mattis ridiculus tortor eu rhoncus porta lundium rhoncus massa porttitor, amet diam sociis dictumst
+                    !</p>
+            </div>
+
+            <div id="graphGrid4">
+                <img src="/Unit15/assets/brImg7.jpg" alt="">
+                <button>SEE PRICING</button>
+                <h5>Company Growth 2012-2016</h5>
+            </div>
+
+            <div id="graphGrid3">
+                <h3>Live 24/7 Technical Support</h3>
+                <p>placerat dignissim lorem eu duis, quis aenean! Sagittis ridiculus aenean cras eu a, augue, sed sed
+                    rhoncus dictumst a? Scelerisque. Dapibus in etiam, natoque porta nunc in. Hac duis, et et, tincidunt
+                    lorem et. Amet sed aliquam egestas etiam, nec. Aliquet, quis enim, quis, in odio rhoncus, parturient
+                    pid risus nunc, lundium dapibus odio. Aenean eu pid sociis risus! Pellentesque montes elementum
+                    eros! Integer magna.</p>
+            </div>
+
+
+        </section>
+
+        <div id="partners">
+            <img src="/Unit15/assets/brImgFooter2.jpg" alt="Corporate partners">
+        </div>
+
+
+
+
+    </main>
+    <div id="footerWrapper">
+        <footer>
+            <p>Call at 1-800-555-1234</p>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="/Unit15/blueriver.js"> </script>
 </body>
+
 </html>

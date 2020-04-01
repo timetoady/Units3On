@@ -1,11 +1,29 @@
 main,
 header,
-nav,
+#mainNav,
 footer,
 #blackBar,
 #hero,
 #partners {
-    max-width: 900px;
+    max-width: 60rem;
     margin: 0 auto;
+    padding-right: 0;
+    padding-left: 0;
 
+}
+
+#aboutGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#graphs {
+    gap: .5rem;
+    grid-template-areas:
+        "graphgrid1 graphgrid1 graphgrid2 graphgrid2 graphgrid4"
+        "graphgrid3 graphgrid3 graphgrid3 graphgrid3 graphgrid4";
+}
+
+#graphs img{
+    contain: unset;
 }
