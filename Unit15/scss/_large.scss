@@ -17,13 +17,30 @@ footer,
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-#graphs {
-    gap: .5rem;
+#graphs{
+    gap: 0 1rem;
+    // grid-template-columns: 
+    // 1fr 1fr 1fr;
+    // grid-template-rows: 
+    // 1fr 1fr;
     grid-template-areas:
-        "graphgrid1 graphgrid1 graphgrid2 graphgrid2 graphgrid4"
-        "graphgrid3 graphgrid3 graphgrid3 graphgrid3 graphgrid4";
+        "graphgrid1 graphgrid2 graphgrid4"
+        "graphgrid3 graphgrid3 graphgrid4"
+        "graphgrid3 graphgrid3 graphgrid4"
+        "graphgrid3 graphgrid3 graphgrid4";
+        grid-auto-columns: minmax(300px, 33%);
 }
 
-#graphs img{
-    contain: unset;
-}
+#graphGrid4 button{
+    font-size: 1.2rem;
+    border-radius: 30px;
+    padding: .2rem 13%;
+  }
+
+
+
+
+
+// #graphs img{
+//     contain: unset;
+// }

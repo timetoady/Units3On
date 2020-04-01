@@ -435,10 +435,15 @@ nav {
   overflow: hidden;
   position: relative; }
 
+#mainNav ul {
+  padding-left: 0; }
+
 #mainNav li {
   list-style-type: none;
   text-emphasis: none;
-  text-decoration: none; }
+  text-decoration: none;
+  text-align: center;
+  margin: 0 0 1rem 0; }
 
 #mainNav a {
   text-emphasis: none;
@@ -573,7 +578,7 @@ div#footerWrapper {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0481ad', endColorstr='#034d72',GradientType=0 );
   /* IE6-9 */
   color: white;
-  margin-top: -4px; }
+  margin-top: -3px; }
 
 footer {
   padding: .6rem .5rem; }
@@ -615,6 +620,9 @@ footer p {
     font-size: 14px;
     display: block; }
 
+  #mainNav li {
+    margin: 0; }
+
   #barWrapper {
     background-color: black; }
 
@@ -652,12 +660,10 @@ footer p {
     grid-template-columns: 1fr 1fr; }
 
   #graphGrid1 {
-    grid-area: graphgrid1;
-    height: 100%; }
+    grid-area: graphgrid1; }
 
   #graphGrid2 {
-    grid-area: graphgrid2;
-    height: 100%; }
+    grid-area: graphgrid2; }
 
   #graphGrid3 {
     grid-area: graphgrid3; }
@@ -667,12 +673,25 @@ footer p {
 
   #graphGrid4 {
     text-align: center;
-    border: none;
+    border: unset;
     grid-area: graphgrid4; }
+
+  #graphGrid4 button {
+    background-color: #0481AD;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    border-radius: 1rem;
+    padding: .2rem 2rem; }
+
+  #graphGrid4 h5 {
+    font-size: .8rem;
+    margin-bottom: 0; }
 
   #graphs {
     gap: .5rem;
-    grid-template-areas: "graphgrid1 graphgrid4 graphgrid2" "graphgrid1 graphgrid4 graphgrid2" "graphgrid3 graphgrid3 graphgrid3"; } }
+    grid-template-areas: "graphgrid1 graphgrid2 graphgrid4" "graphgrid3 graphgrid3 graphgrid4";
+    grid-auto-columns: minmax(100px, 33%); } }
 @media only screen and (min-width: 1025px) {
   main,
   header,
@@ -691,8 +710,11 @@ footer p {
     grid-template-columns: 1fr 1fr 1fr 1fr; }
 
   #graphs {
-    gap: .5rem;
-    grid-template-areas: "graphgrid1 graphgrid1 graphgrid2 graphgrid2 graphgrid4" "graphgrid3 graphgrid3 graphgrid3 graphgrid3 graphgrid4"; }
+    gap: 0 1rem;
+    grid-template-areas: "graphgrid1 graphgrid2 graphgrid4" "graphgrid3 graphgrid3 graphgrid4" "graphgrid3 graphgrid3 graphgrid4" "graphgrid3 graphgrid3 graphgrid4";
+    grid-auto-columns: minmax(300px, 33%); }
 
-  #graphs img {
-    contain: unset; } }
+  #graphGrid4 button {
+    font-size: 1.2rem;
+    border-radius: 30px;
+    padding: .2rem 13%; } }

@@ -40,6 +40,10 @@ nav li{
   display: block;
 }
 
+#mainNav li{
+  margin: 0;
+}
+
 //Black bar
 
 #barWrapper{
@@ -89,16 +93,12 @@ nav li{
   grid-template-columns: 1fr 1fr;
  }
 
-
-
 #graphGrid1 {
   grid-area: graphgrid1;
-  height: 100%;
 }
 
 #graphGrid2 {
   grid-area: graphgrid2;
-  height: 100%;
 }
 
 #graphGrid3 {
@@ -111,14 +111,28 @@ nav li{
 
 #graphGrid4{
   text-align: center;
-  border: none;
+  border: unset;
   grid-area: graphgrid4;
+}
+
+#graphGrid4 button{
+  background-color: $titleBlue;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 1rem;
+  padding: .2rem 2rem;
+}
+
+#graphGrid4 h5{
+  font-size: .8rem;
+  margin-bottom: 0;
 }
 
 #graphs{
   gap: .5rem;
   grid-template-areas: 
-  "graphgrid1 graphgrid4 graphgrid2"
-  "graphgrid1 graphgrid4 graphgrid2" 
-  "graphgrid3 graphgrid3 graphgrid3" 
+  "graphgrid1 graphgrid2 graphgrid4"
+  "graphgrid3 graphgrid3 graphgrid4";
+  grid-auto-columns: minmax(100px, 33%);
 }
