@@ -462,7 +462,8 @@ nav {
 
 #blackBar {
   color: white;
-  padding: 1rem 2%; }
+  padding: 1rem 2%;
+  margin-top: .7rem; }
 
 #blackBar p {
   font-style: italic;
@@ -629,7 +630,8 @@ footer p {
   #blackBar {
     color: white;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-top: 1rem; }
 
   #blackBar ul {
     margin-left: 3rem; }
@@ -717,4 +719,7 @@ footer p {
   #graphGrid4 button {
     font-size: 1.2rem;
     border-radius: 30px;
-    padding: .2rem 13%; } }
+    padding: .2rem 13%; }
+
+  #blackBar {
+    margin-top: .7rem; } }
