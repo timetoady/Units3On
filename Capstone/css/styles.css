@@ -570,9 +570,7 @@ main {
   border-radius: .5rem;
   padding: .3rem 3rem;
   font-size: 1rem;
-  position: absolute;
-  bottom: 1rem;
-  left: 1.7rem;
+  margin-top: 1rem;
   cursor: pointer; }
 
 .outer img {
@@ -980,7 +978,7 @@ footer p {
     margin: 2rem 2% 2rem 2%; }
 
   .outer button {
-    left: 3.75rem; }
+    padding: .2rem 1rem; }
 
   .inner h3 {
     font-size: 1.5rem;
