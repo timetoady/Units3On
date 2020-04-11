@@ -2,6 +2,9 @@
 @import "variables";
 @import "small";
 
+@import "../slick/slick-theme";
+@import "../slick/slick";
+
 @media only screen and (min-width: 560px) {
     @import "medium";
 }

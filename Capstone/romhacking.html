@@ -14,10 +14,10 @@
     <div id=headerWrapper>
         <header>
             <div id="logoDiv">
-                <img  srcset="/Capstone/assets/romHackinglogo.png, /Capstone/assets/romHackinglogo@2x.png 2x, /Capstone/assets/romHackinglogo@3x.png 3x" src="/Capstone/assets/romHackinglogo.png" alt="ROMhacking.net">
+                <a href="/Capstone/romhacking.html"><img
+                        srcset="/Capstone/assets/romHackinglogo.png, /Capstone/assets/romHackinglogo@2x.png 2x, /Capstone/assets/romHackinglogo@3x.png 3x"
+                        src="/Capstone/assets/romHackinglogo.png" alt="ROMhacking.net"></a>
             </div>
-
-
 
             <nav id="mainNav">
                 <div id="mobileTop">
@@ -26,53 +26,100 @@
                     </a>
                 </div>
 
-                    <ul id="myLinks">
-                        <li id="sectionLi">
-                        <a href="#"><ion-icon class="icon" name="game-controller"></ion-icon></ion-icon>Sections</a>
-                                <ul id="orderSublink">
-                                <li><a href="http://www.romhacking.net/utilities/" target="_blank">Utilities</a></li>
-                                <li><a href="#">Translations</a></li>
-                                <li><a href="#">ROM Hacks</a></li>
-                                <li><a href="#">Homebrew</a></li>
-                                <li><a href="#">Fonts</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contribute.html">
-                                <ion-icon class="icon" name="document-attach"></ion-icon>
-                                </ion-icon>Submission
-                            </a></li>
-                        <li><a href="http://www.romhacking.net/submissions/exthacksubmissions/" target="_blank">
-                                <ion-icon class="icon" name="alert"></ion-icon>
-                                </ion-icon>Latest
-                            </a></li>
-                        <li><a href="http://www.romhacking.net/forum/" target="_blank">
-                                <ion-icon class="icon " name="call"></ion-icon>Community
-                            </a></li>
-                        <li><a href="about.html">
-                                <ion-icon class="icon" name="document-attach"></ion-icon>
-                                </ion-icon>About & Help
-                            </a></li>
-                        <li id="searchLi"> <input type="text" class="searchTermM" placeholder="Search">
-                            <button type="submit" class="searchButtonM">
-                                <ion-icon name="search"></ion-icon>
-                            </button></li>
-                    </ul>
-             
-
+                <ul id="myLinks">
+                    <li id="sectionLi">
+                        <a href="#">
+                            <ion-icon class="icon" name="game-controller"></ion-icon>
+                            </ion-icon>Sections
+                        </a>
+                        <ul id="orderSublink">
+                            <li><a href="http://www.romhacking.net/utilities/" target="_blank">Utilities</a></li>
+                            <li><a href="#">Translations</a></li>
+                            <li><a href="#">ROM Hacks</a></li>
+                            <li><a href="#">Homebrew</a></li>
+                            <li><a href="#">Fonts</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contribute.html">
+                            <ion-icon class="icon" name="document-attach"></ion-icon>
+                            </ion-icon>Submission
+                        </a></li>
+                    <li><a href="http://www.romhacking.net/submissions/exthacksubmissions/" target="_blank">
+                            <ion-icon class="icon" name="alert"></ion-icon>
+                            </ion-icon>Latest
+                        </a></li>
+                    <li><a href="http://www.romhacking.net/forum/" target="_blank">
+                            <ion-icon class="icon " name="call"></ion-icon>Community
+                        </a></li>
+                    <li><a href="about.html">
+                            <ion-icon class="icon" name="document-attach"></ion-icon>
+                            </ion-icon>About & Help
+                        </a></li>
+                    <li id="searchLi"> <input type="text" class="searchTermM" placeholder="Search">
+                        <button type="submit" class="searchButtonM">
+                            <ion-icon name="search"></ion-icon>
+                        </button></li>
+                </ul>
             </nav>
 
-
-
-
         </header>
+    </div>
+
+    <nav id="mobileNavbar"></nav>
+
+    <div class="slider">
+        <a href="/Capstone/exampleEntry.html">
+            <picture>
+
+                <source srcset="/Capstone/assets/SoMsmall.jpg" media="(max-width: 28.12rem)">
+                <source srcset="/Capstone/assets/SoMbig.jpg" media="(min-width: 28.12rem)">
+                <img src="/Capstone/assets/SoMbig.jpg" alt="Secret of Mana Relocalized">
+
+                <div>
+                    <h2>Secret of Mana - Relocalized</h2>
+                    <h5>Hack</h5>
+                    <p>Secret of Mana - Relocalized focuses on updating, uncensoring, and “relocalizing” gameplay,
+                        graphical, and text (both script and non-script) elements of Secret of Mana.</p>
+                </div>
+            </picture>
+        </a>
+        <picture>
+            <source srcset="/Capstone/assets/DBZ2small.jpg" media="(max-width: 28.12rem)">
+            <source srcset="/Capstone/assets/DBZ2big.jpg" media="(min-width: 28.12rem)">
+            <img src="/Capstone/assets/DBZ2big.jpg" alt="Dragon Ball Z: Legend of the Super Saiyan">
+            <div>
+                <h2>Dragon Ball Z: Legend of the Super Saiyan</h2>
+                <h5>Translation</h5>
+                <p>Everything in the game is complete, including the intro and endings. Release 1.02 fixes bugs reported
+                    in the 2011 complete release. Have fun!</p>
+            </div>
+        </picture>
+
 
     </div>
-    <nav id="mobileNavbar"></nav>
-    <div id="sectionSubMenu"></div>
 
-    <main>
+    <main id="landingMain">
 
+        <div id="cardADiv" class="outer">
 
+            <div id="cardA" class="inner" onmouseover="fadeFunction1()" onmouseout="fadeFunction1()">
+                <h3>What is this place? How does it work?</h3>
+                <p class="innerP">ROMhacking.net is home to classic video game modifications, fan translations, console
+                    homebrew,
+                    utilities, and learning resources.</p>
+                <a href="/Capstone/about.html"> <button id="boxButton1">LEARN MORE</button></a>
+            </div>
+        </div>
+
+        <div class="outer" id="cardBDiv">
+
+            <div id="cardB" class="inner" onmouseover="fadeFunction2()" onmouseout="fadeFunction2()">
+                <h3>Contribute</h3>
+                <p class="innerP">Go here to jump right into contributing your hacks, translations, and homebrew. New to
+                    the scene? We also have a help area!</p>
+                <a href="/Capstone/about.html"> <button id="boxButton2">CONTRIBUTE</button></a>
+            </div>
+        </div>
 
 
     </main>
@@ -81,11 +128,27 @@
 
     <div id="footerWrapper">
         <footer>
-            <p>©2020 RHDN  by TimeToady. All Rights Reserved.</p>
+            <div><p><ion-icon name="logo-facebook"></ion-icon> <ion-icon name="logo-twitter"></ion-icon> <ion-icon name="logo-instagram"></ion-icon></p></div>
+            <p>©2020 RHDN by TimeToady. All Rights Reserved.</p>
         </footer>
     </div>
 
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                dots: true,
+                arrows: false,
+                infinite: true,
+                speed: 200,
+                cssEase: 'ease-in',
+                autoplay: true,
+                autoplaySpeed: 30000
+            });
+        });
+    </script>
     <script src="/Capstone/romhacking.js"> </script>
 </body>
 

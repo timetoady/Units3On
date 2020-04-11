@@ -16,17 +16,20 @@ footer{
 div#headerWrapper{
     background-color: #002F54;
     width: 100%;
+    margin: 0;
 }
 
 header {
     display: flex;
     justify-content: space-between;
+    margin: 0;
     
 }
 
 #logoDiv{
     width: 90%;
     padding-top: .3rem;
+    margin: 0;
 }
 
 #logoDiv img{
@@ -76,11 +79,11 @@ nav{
 }
 
 #mobileNavbar {
-    background-color: rgba(13, 58, 93, 0.918);
-    margin-top: 2px;
+    background-color: rgba(13, 58, 93, 0.897);
     position: absolute;
     width: 100%;
     transition: all ease-in 1s;
+    z-index: 100;
    
     
 }
@@ -97,7 +100,8 @@ nav{
     display: block;
     transform: translateY(0%);
     transition: all 1s ease-in-out;
-    
+    z-index: 100;
+    height: 100vh;
 }
 
 #mainNav ul, #mobileNavbar ul{
@@ -131,23 +135,134 @@ ul#orderSublink li {
 }
 
 
+//Slider settings
 
-//Hero image
-
-#hero img {
+.slider img {
     width: 100%;
+}
+
+.slider a {
+color: black;
+text-decoration: none;
     
 }
 
+.slider h2{
+    font-size: 1.2rem;
+}
 
+picture h2, h5, p{
+    margin: 0 0 0 0;
+    padding: .2rem;
+    
+}
+
+picture p {
+    margin-top: 1rem;
+}
+
+// Info cards
+
+.inner, .outer {
+    width: 256px;
+    height: 224px;
+    margin: 0 auto;
+    
+}
+
+.inner{
+ transition: ease-in .2s;
+ background-color: #002F54;
+ opacity: 1;
+ position: absolute;
+ margin: 0 0 0 0;
+ z-index: 49;
+}
+
+.inner h3{
+    padding: 3rem 3rem 0 1rem;
+}
+
+.outer{
+position: relative;
+color: white;
+text-align: center;
+}
+
+
+
+.outer h3{
+    padding: .2rem 1rem; 
+}
+
+
+.inner p{
+    color: #002F54;
+    font-size: .6rem;
+    text-align: left;
+    margin: 0 .5rem 0 .5rem;
+}
+
+.inner:hover {
+    background-color: rgba(0, 0, 0, 0.589);
+    transition: linear .5s;
+    color:white;
+}
+
+#hoverP {
+    color:white ;
+    transition: linear .5s;
+    
+}
+
+#hoverP p{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.781);
+}
+
+.outer button{
+    opacity: 0;
+    background-color: #002F54;
+    color: white;
+    border: white dotted 1px;
+    border-radius: 1rem;
+    padding: .3rem 1rem;
+    font-size: .8rem;
+    position: absolute;
+    bottom: 15px;
+    left: 22%;
+}
+
+#cardADiv{
+    background: url(/Capstone/assets/dbz3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 2rem;
+}
+
+#cardBDiv{
+    background: url(/Capstone/assets/screenshot2.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 2rem;
+}
 
 //footer items
 
 div#footerWrapper{
 background-color: #002F54;
 color: white;
+text-align: center;
 }
 
+footer div{
+    display:flex;
+    justify-content: space-around;
+}
+
+footer div p{
+    font-size: 2rem;
+}
 
 footer{
     padding: .6rem .5rem;

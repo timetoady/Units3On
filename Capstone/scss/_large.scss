@@ -3,8 +3,8 @@ header,
 footer {
     max-width: 75rem;
     margin: 0 auto;
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 2%;
+    padding-left: 2%;
 
 }
 
@@ -41,17 +41,18 @@ header{
 
 #myLinks {
     display: block;
+    margin: 0;
 }
 
 #mainNav {
-    margin-top: .5rem;
+    margin-top: .6rem;
     width: 80%;
 }
 
 #mainNav ul {
     display: flex;
     justify-content: space-between;
-
+    margin: 0;
 }
 
 #mainNav li {
@@ -114,6 +115,8 @@ ul li ul {
     opacity: 1;
     display: block;
     background-color: #0D3A5D;  
+    display: inline-block;
+    z-index: 100;
 
   }
   
@@ -139,4 +142,23 @@ li#searchLi{
 
 footer{
     text-align: center;
+}
+
+.inner, .outer {
+    width: 384px;
+    height: 336px;
+    margin: 0 auto;
+    
+  }
+
+#landingMain{
+    margin-bottom: 2rem;
+}
+
+.outer button{
+    left: 31%;
+}
+
+.inner p{
+    font-size: 1rem;
 }

@@ -25,3 +25,22 @@ footer {
   font-size: 1.5rem;
 }
 
+
+.removeOverflow {
+  overflow: unset;
+}
+
+.addOverflow {
+  overflow: hidden;
+}
+
+
+#landingMain{
+  display: flex;
+
+}
+
+#cardADiv, #cardBDiv {
+  margin-bottom: 1rem;
+}
+
