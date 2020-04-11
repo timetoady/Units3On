@@ -164,8 +164,10 @@ picture p {
 // Info cards
 
 .inner, .outer {
-    width: 256px;
-    height: 224px;
+    // width: 256px;
+    // height: 224px;
+    width: 16rem;
+    height: 12rem;
     margin: 0 auto;
     
 }
@@ -234,8 +236,8 @@ text-align: center;
     padding: .3rem 3rem;
     font-size: 1rem;
     position: absolute;
-    bottom: 15px;
-    left: 6%;
+    bottom: 1rem;
+    left: 1.7rem;
     cursor: pointer;
 }
 
@@ -247,8 +249,9 @@ text-align: center;
     background: url(/Capstone/assets/dbz3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 256px;
-    height: 224px;
+    width: 16rem;
+    height: 12rem;
+    
     
 }
 
@@ -256,8 +259,8 @@ text-align: center;
     background: url(/Capstone/assets/screenshot2.gif);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 256px;
-    height: 224px;
+    width: 16rem;
+    height: 12rem;
     margin-top: 1rem;
     
 }

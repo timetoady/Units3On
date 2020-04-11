@@ -512,8 +512,8 @@ picture p {
   margin-top: 1rem; }
 
 .inner, .outer {
-  width: 256px;
-  height: 224px;
+  width: 16rem;
+  height: 12rem;
   margin: 0 auto; }
 
 .inner {
@@ -567,8 +567,8 @@ picture p {
   padding: .3rem 3rem;
   font-size: 1rem;
   position: absolute;
-  bottom: 15px;
-  left: 6%;
+  bottom: 1rem;
+  left: 1.7rem;
   cursor: pointer; }
 
 .outer img {
@@ -578,15 +578,15 @@ picture p {
   background: url(/Capstone/assets/dbz3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 256px;
-  height: 224px; }
+  width: 16rem;
+  height: 12rem; }
 
 #cardBDiv {
   background: url(/Capstone/assets/screenshot2.gif);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 256px;
-  height: 224px;
+  width: 16rem;
+  height: 12rem;
   margin-top: 1rem; }
 
 div#footerWrapper {
@@ -961,20 +961,19 @@ footer p {
     text-align: center; }
 
   .inner, .outer {
-    width: 384px;
-    height: 336px;
+    width: 20rem;
+    height: 15rem;
     margin: 0 auto; }
 
   #cardADiv, #cardBDiv {
-    width: 384px;
-    height: 336px; }
+    width: 20rem;
+    height: 15rem; }
 
   #landingMain {
     margin-bottom: 2rem; }
 
   .outer button {
-    left: 80px;
-    bottom: 60px; }
+    left: 3.75rem; }
 
   .inner h3 {
     font-size: 1.5rem;
