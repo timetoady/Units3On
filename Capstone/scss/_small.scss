@@ -177,7 +177,11 @@ picture p {
  position: absolute;
  margin: 0 0 0 0;
  z-index: 49;
- border: white dotted 10px;
+ border-bottom: 4px dotted white;
+ border-right: 3px dashed white;
+ border-top: 1px dashed white;
+ border-left: 1px dashed white;
+ 
 }
 
 .inner h3{
@@ -188,20 +192,20 @@ picture p {
 position: relative;
 color: white;
 text-align: center;
+
 }
-
-
 
 .outer h3{
     padding: .2rem 1rem; 
+    
 }
-
 
 .inner p{
     color: #002F54;
     font-size: .6rem;
     text-align: left;
     margin: 0 .5rem 0 .5rem;
+    
 }
 
 .inner:hover {
@@ -226,7 +230,7 @@ text-align: center;
     background-color: #002F54;
     color: white;
     border: white dotted 1px;
-    border-radius: 1rem;
+    border-radius: .5rem;
     padding: .3rem 2rem;
     font-size: .8rem;
     position: absolute;
@@ -235,18 +239,27 @@ text-align: center;
     cursor: pointer;
 }
 
+.outer img {
+    width: 100%;
+}
+
 #cardADiv{
     background: url(/Capstone/assets/dbz3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 2rem;
+    width: 256px;
+    height: 224px;
+    
 }
 
 #cardBDiv{
     background: url(/Capstone/assets/screenshot2.gif);
     background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 2rem;
+    width: 256px;
+    height: 224px;
+    margin-top: 1rem;
+    
 }
 
 //footer items
@@ -255,6 +268,7 @@ div#footerWrapper{
 background-color: #002F54;
 color: white;
 text-align: center;
+margin-top: 2rem;
 }
 
 footer div{

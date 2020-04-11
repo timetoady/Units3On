@@ -523,7 +523,10 @@ picture p {
   position: absolute;
   margin: 0 0 0 0;
   z-index: 49;
-  border: white dotted 10px; }
+  border-bottom: 4px dotted white;
+  border-right: 3px dashed white;
+  border-top: 1px dashed white;
+  border-left: 1px dashed white; }
 
 .inner h3 {
   padding: 3rem 3rem 0 1rem; }
@@ -560,7 +563,7 @@ picture p {
   background-color: #002F54;
   color: white;
   border: white dotted 1px;
-  border-radius: 1rem;
+  border-radius: .5rem;
   padding: .3rem 2rem;
   font-size: .8rem;
   position: absolute;
@@ -568,22 +571,29 @@ picture p {
   left: 36px;
   cursor: pointer; }
 
+.outer img {
+  width: 100%; }
+
 #cardADiv {
   background: url(/Capstone/assets/dbz3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 2rem; }
+  width: 256px;
+  height: 224px; }
 
 #cardBDiv {
   background: url(/Capstone/assets/screenshot2.gif);
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 2rem; }
+  width: 256px;
+  height: 224px;
+  margin-top: 1rem; }
 
 div#footerWrapper {
   background-color: #002F54;
   color: white;
-  text-align: center; }
+  text-align: center;
+  margin-top: 2rem; }
 
 footer div {
   display: flex;
@@ -953,6 +963,10 @@ footer p {
     width: 384px;
     height: 336px;
     margin: 0 auto; }
+
+  #cardADiv, #cardBDiv {
+    width: 384px;
+    height: 336px; }
 
   #landingMain {
     margin-bottom: 2rem; }
