@@ -178,7 +178,7 @@ picture p {
  margin: 0 0 0 0;
  z-index: 49;
  border-bottom: 4px dashed white;
- border-right: 3px dashed white;
+ border-right: 1px dashed white;
  border-top: 1px dashed white;
  border-left: 1px dashed white;
  
@@ -231,11 +231,11 @@ text-align: center;
     color: white;
     border: white dotted 1px;
     border-radius: .5rem;
-    padding: .3rem 2rem;
+    padding: .3rem 3rem;
     font-size: .8rem;
     position: absolute;
     bottom: 15px;
-    left: 36px;
+    left: 6%;
     cursor: pointer;
 }
 
