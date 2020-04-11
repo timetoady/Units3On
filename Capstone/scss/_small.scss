@@ -177,6 +177,7 @@ picture p {
  position: absolute;
  margin: 0 0 0 0;
  z-index: 49;
+ border: white dotted 10px;
 }
 
 .inner h3{
@@ -226,11 +227,12 @@ text-align: center;
     color: white;
     border: white dotted 1px;
     border-radius: 1rem;
-    padding: .3rem 1rem;
+    padding: .3rem 2rem;
     font-size: .8rem;
     position: absolute;
     bottom: 15px;
-    left: 22%;
+    left: 36px;
+    cursor: pointer;
 }
 
 #cardADiv{

@@ -522,7 +522,8 @@ picture p {
   opacity: 1;
   position: absolute;
   margin: 0 0 0 0;
-  z-index: 49; }
+  z-index: 49;
+  border: white dotted 10px; }
 
 .inner h3 {
   padding: 3rem 3rem 0 1rem; }
@@ -560,11 +561,12 @@ picture p {
   color: white;
   border: white dotted 1px;
   border-radius: 1rem;
-  padding: .3rem 1rem;
+  padding: .3rem 2rem;
   font-size: .8rem;
   position: absolute;
   bottom: 15px;
-  left: 22%; }
+  left: 36px;
+  cursor: pointer; }
 
 #cardADiv {
   background: url(/Capstone/assets/dbz3.jpg);
@@ -956,7 +958,12 @@ footer p {
     margin-bottom: 2rem; }
 
   .outer button {
-    left: 31%; }
+    left: 100px;
+    bottom: 60px; }
+
+  .inner h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem; }
 
   .inner p {
     font-size: 1rem; } }
