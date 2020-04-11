@@ -36,6 +36,10 @@ header {
     width: 100%;
 }
 
+#icon{
+    padding: .6rem .6rem .4rem .5rem!important;
+}
+
 .searchTermM{ 
     font-size: 1rem;
     border-radius: .2rem;
@@ -56,12 +60,11 @@ header {
 }
 
 #mobileTop {
-    padding: 5% .8rem 0 0;
     color: white;
     text-emphasis: none;
     text-decoration: none;
-    font-size: 1.2rem;
-    
+    font-size: 1.5rem;
+    padding: .05rem .5rem 0 0;
 }
 
 #myLinks{
@@ -74,10 +77,9 @@ nav{
   position: relative;
 }
 
-.icon{
-  padding: .1rem .2rem 0 .2rem;
-  margin: 0 0 -.17rem 0;
-}
+// .icon{
+//   padding: 1rem .2rem 0 .2rem;
+// }
 
 #mobileNavbar {
     background-color: rgba(13, 58, 93, 0.897);
@@ -126,8 +128,9 @@ nav{
     text-decoration: none;
     color: white;
     display: block;
-    padding: .6rem;
-    padding-left: .2rem;
+    padding: 1.2rem .6rem;
+    padding-left: .8rem;
+    font-size: 1.3rem;
     
 }
 
@@ -137,6 +140,7 @@ ul#orderSublink li {
 
 
 //Slider settings
+
 
 .slider img {
     width: 100%;
@@ -164,9 +168,11 @@ picture p {
 
 // Info cards
 
+main{
+    border-top: 1px block solid;
+}
+
 .inner, .outer {
-    // width: 256px;
-    // height: 224px;
     width: 16rem;
     height: 12rem;
     margin: 0 auto;

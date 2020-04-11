@@ -10,9 +10,16 @@ footer {
   padding-top: .3rem;
 }
 
-#mobileTop{
-  font-size: 2rem;
+#mobileTop a{
+  font-size: 3rem;
 }
+
+#icon{
+  padding: 1rem 1rem .3rem .5rem!important;
+  
+}
+
+
 
 #searchLi{
   width: 50%;
@@ -34,6 +41,9 @@ footer {
   overflow: hidden;
 }
 
+picture div{
+  padding: 1rem;
+}
 
 #landingMain{
   display: flex;

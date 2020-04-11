@@ -417,6 +417,9 @@ header {
 #logoDiv img {
   width: 100%; }
 
+#icon {
+  padding: 0.6rem 0.6rem 0.4rem 0.5rem !important; }
+
 .searchTermM {
   font-size: 1rem;
   border-radius: .2rem;
@@ -434,11 +437,11 @@ header {
   margin-bottom: -.2rem; }
 
 #mobileTop {
-  padding: 5% .8rem 0 0;
   color: white;
   text-emphasis: none;
   text-decoration: none;
-  font-size: 1.2rem; }
+  font-size: 1.5rem;
+  padding: .05rem .5rem 0 0; }
 
 #myLinks {
   display: none; }
@@ -446,10 +449,6 @@ header {
 nav {
   overflow: hidden;
   position: relative; }
-
-.icon {
-  padding: .1rem .2rem 0 .2rem;
-  margin: 0 0 -.17rem 0; }
 
 #mobileNavbar {
   background-color: rgba(13, 58, 93, 0.897);
@@ -489,8 +488,9 @@ nav {
   text-decoration: none;
   color: white;
   display: block;
-  padding: .6rem;
-  padding-left: .2rem; }
+  padding: 1.2rem .6rem;
+  padding-left: .8rem;
+  font-size: 1.3rem; }
 
 ul#orderSublink li {
   border: none; }
@@ -511,6 +511,9 @@ picture h2, h5, p {
 
 picture p {
   margin-top: 1rem; }
+
+main {
+  border-top: 1px block solid; }
 
 .inner, .outer {
   width: 16rem;
@@ -825,8 +828,11 @@ footer p {
     width: 80%;
     padding-top: .3rem; }
 
-  #mobileTop {
-    font-size: 2rem; }
+  #mobileTop a {
+    font-size: 3rem; }
+
+  #icon {
+    padding: 1rem 1rem 0.3rem 0.5rem !important; }
 
   #searchLi {
     width: 50%;
@@ -843,6 +849,9 @@ footer p {
   .addOverflow {
     overflow: hidden; }
 
+  picture div {
+    padding: 1rem; }
+
   #landingMain {
     display: flex; }
 
@@ -854,9 +863,7 @@ footer p {
   header,
   footer {
     max-width: 75rem;
-    margin: 0 auto;
-    padding-right: 2%;
-    padding-left: 2%; }
+    margin: 0 auto; }
 
   nav {
     overflow: unset; }
@@ -887,7 +894,6 @@ footer p {
     margin: 0; }
 
   #mainNav {
-    margin-top: .6rem;
     width: 80%; }
 
   #mainNav ul {
@@ -909,7 +915,7 @@ footer p {
 
   ul#orderSublink {
     padding: 0 0 0 0rem;
-    margin: -.5rem 0 0 1rem;
+    margin: -1rem 0 0 1.9rem;
     border: 1px dotted white;
     border-radius: 3px; }
 
@@ -950,7 +956,7 @@ footer p {
 
   li#searchLi {
     width: 20%;
-    padding-top: .38rem; }
+    padding-top: 1rem; }
 
   .searchTermM {
     font-size: .8rem; }
@@ -971,7 +977,7 @@ footer p {
     height: 15rem; }
 
   #landingMain {
-    margin-bottom: 2rem; }
+    margin: 2rem 2% 2rem 2%; }
 
   .outer button {
     left: 3.75rem; }

@@ -3,8 +3,6 @@ header,
 footer {
     max-width: 75rem;
     margin: 0 auto;
-    padding-right: 2%;
-    padding-left: 2%;
 
 }
 
@@ -45,7 +43,6 @@ header{
 }
 
 #mainNav {
-    margin-top: .6rem;
     width: 80%;
 }
 
@@ -74,7 +71,7 @@ header{
 
 ul#orderSublink  {
     padding: 0 0 0 0rem;
-    margin: -.5rem 0 0 1rem;
+    margin: -1rem 0 0 1.9rem;
     border: 1px dotted white;
     border-radius: 3px;
 }
@@ -128,7 +125,7 @@ ul li ul {
 
 li#searchLi{
     width: 20%;
-    padding-top: .38rem; 
+    padding-top: 1rem; 
 
 }
 
@@ -139,6 +136,8 @@ li#searchLi{
 .searchButtonM {
     font-size: .6rem;
 }
+
+
 
 footer{
     text-align: center;
@@ -158,7 +157,7 @@ footer{
 }
 
 #landingMain{
-    margin-bottom: 2rem;
+    margin: 2rem 2% 2rem 2%;
 }
 
 .outer button{
