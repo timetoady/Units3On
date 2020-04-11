@@ -565,7 +565,7 @@ picture p {
   border: white dotted 1px;
   border-radius: .5rem;
   padding: .3rem 3rem;
-  font-size: .8rem;
+  font-size: 1rem;
   position: absolute;
   bottom: 15px;
   left: 6%;
