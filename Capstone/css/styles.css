@@ -424,7 +424,7 @@ header {
   font-size: 1rem;
   border-radius: .2rem;
   border: none;
-  width: 100%; }
+  width: 98%; }
 
 .searchButtonM {
   font-size: .8rem;
@@ -433,7 +433,7 @@ header {
   border-radius: .2rem;
   border: none;
   background-color: white;
-  margin-left: -1.5rem;
+  margin-left: -2rem;
   margin-bottom: -.2rem; }
 
 #mobileTop {
@@ -833,10 +833,16 @@ footer p {
     padding: 1rem 1rem 0.3rem 0.5rem !important; }
 
   #searchLi {
-    width: 50%;
-    padding-top: .5rem;
-    margin: 0 auto;
+    width: 80%;
+    padding-top: 1rem;
+    padding-left: 1rem;
     border: none !important; }
+
+  .searchTermM {
+    font-size: 1.5rem; }
+
+  .searchButtonM {
+    font-size: 1rem; }
 
   #myLinks a {
     font-size: 1.5rem; }

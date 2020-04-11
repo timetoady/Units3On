@@ -22,10 +22,18 @@ footer {
 
 
 #searchLi{
-  width: 50%;
-  padding-top: .5rem;
-  margin: 0 auto;
+  width: 80%;
+  padding-top: 1rem;
+  padding-left: 1rem;
   border: none !important;
+}
+
+.searchTermM{
+  font-size: 1.5rem;
+}
+
+.searchButtonM{
+  font-size: 1rem;
 }
 
 #myLinks a {
