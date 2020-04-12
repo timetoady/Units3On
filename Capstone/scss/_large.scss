@@ -6,7 +6,7 @@ footer {
 
 }
 
-nav{
+nav {
     overflow: unset;
 }
 
@@ -16,9 +16,9 @@ nav{
 
 #myLinks a {
     font-size: 80%;
-  }
+}
 
-.icon{
+.icon {
     padding: .1rem 0 0 .2rem;
     margin: 0 0 -.17rem 0;
 }
@@ -29,7 +29,7 @@ nav{
     margin: 0;
 }
 
-header{
+header {
     justify-content: space-between;
 }
 
@@ -64,34 +64,34 @@ header{
 }
 
 
-#sectionLi{
+#sectionLi {
     position: relative;
-    
+
 }
 
-ul#orderSublink  {
+ul#orderSublink {
     padding: 0 0 0 0rem;
     margin: -1rem 0 0 1.9rem;
     border: 1px dotted white;
     border-radius: 3px;
 }
 
-ul#orderSublink li{
+ul#orderSublink li {
     padding: 0;
 }
 
 
-ul#orderSublink a{
+ul#orderSublink a {
     font-size: .8rem;
     display: block;
     width: 100%;
     padding: .3rem .2rem;
-    
+
 }
 
-ul#orderSublink li:hover{
+ul#orderSublink li:hover {
     background-color: rgb(19, 84, 134);
-    
+
 }
 
 ul li ul {
@@ -103,33 +103,33 @@ ul li ul {
     left: 0;
     display: none;
     flex-direction: column;
-    
-  }
-  
-  ul li:hover > ul,
-  ul li ul:hover {
-    visibility: visible;
-    opacity: 1;
-    display: block;
-    background-color: #0D3A5D;  
-    display: inline-block;
-    z-index: 100;
-
-  }
-  
-  ul li ul li {
-    clear: both;
-    width: 100%;
-    
-  }
-
-li#searchLi{
-    width: 20%;
-    padding-top: 1rem; 
 
 }
 
-.searchTermM{
+ul li:hover>ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    background-color: #0D3A5D;
+    display: inline-block;
+    z-index: 100;
+
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+
+}
+
+li#searchLi {
+    width: 20%;
+    padding-top: 1rem;
+
+}
+
+.searchTermM {
     font-size: .8rem;
 }
 
@@ -139,36 +139,48 @@ li#searchLi{
 
 
 
-footer{
+footer {
     text-align: center;
 }
 
-.inner, .outer {
+.inner,
+.outer {
     width: 20rem;
     height: 15rem;
     margin: 0 auto;
-    
-  }
 
-#cardADiv, #cardBDiv{
-    width: 20rem;
-    height: 15rem;
-    
 }
 
-#landingMain{
+#cardADiv,
+#cardBDiv {
+    width: 20rem;
+    height: 15rem;
+
+}
+
+#landingMain {
     margin: 2rem 2% 2rem 2%;
 }
 
-.outer button{
+.outer button {
     padding: .2rem 1rem;
 }
 
-.inner h3{
+.inner h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
-.inner p{
+.inner p {
     font-size: 1rem;
+}
+
+//grid settings for entry
+
+#display {
+    gap: 1rem;
+    grid-template-areas:
+        "detail description description"
+        "wallpaper wallpaper wallpaper";
+
 }

@@ -1,5 +1,3 @@
-
-
 //Main & header settings
 body {
     margin: 0;
@@ -7,13 +5,13 @@ body {
 }
 
 main,
-footer{
+footer {
     padding-right: 2%;
     padding-left: 2%;
 
 }
 
-div#headerWrapper{
+div#headerWrapper {
     background-color: #002F54;
     width: 100%;
     margin: 0;
@@ -23,40 +21,40 @@ header {
     display: flex;
     justify-content: space-between;
     margin: 0;
-    
+
 }
 
-#logoDiv{
+#logoDiv {
     width: 90%;
     padding-top: .3rem;
     margin: 0;
 }
 
-#logoDiv img{
+#logoDiv img {
     width: 100%;
 }
 
-#icon{
-    padding: .6rem .6rem .4rem .5rem!important;
+#icon {
+    padding: .6rem .6rem .4rem .5rem !important;
 }
 
-.searchTermM{ 
+.searchTermM {
     font-size: 1rem;
     border-radius: .2rem;
     border: none;
     width: 98%;
 }
 
-.searchButtonM{
-   font-size: .8rem;
-   padding: 0;
-   width: 1rem;
-   border-radius: .2rem;
-   border: none;
-   background-color: white;
-   margin-left: -2rem;
-   margin-bottom: -.2rem;
-  
+.searchButtonM {
+    font-size: .8rem;
+    padding: 0;
+    width: 1rem;
+    border-radius: .2rem;
+    border: none;
+    background-color: white;
+    margin-left: -2rem;
+    margin-bottom: -.2rem;
+
 }
 
 #mobileTop {
@@ -67,19 +65,15 @@ header {
     padding: .05rem .5rem 0 0;
 }
 
-#myLinks{
-    display:none;
+#myLinks {
+    display: none;
 
 }
 
-nav{
-  overflow: hidden;
-  position: relative;
+nav {
+    overflow: hidden;
+    position: relative;
 }
-
-// .icon{
-//   padding: 1rem .2rem 0 .2rem;
-// }
 
 #mobileNavbar {
     background-color: rgba(13, 58, 93, 0.897);
@@ -87,19 +81,18 @@ nav{
     width: 100%;
     transition: all ease-in 1s;
     z-index: 100;
-   
-    
+
 }
 
-#closed{
-    display:none;
+#closed {
+    display: none;
     transform: translateY(-100%);
     transition: transform 1s ease-in-out, visibility 0s 0.4s;
     transition: all 1s ease-in-out;
-    
+
 }
 
-#open{
+#open {
     display: block;
     transform: translateY(0%);
     transition: all 1s ease-in-out;
@@ -107,13 +100,15 @@ nav{
     height: 100vh;
 }
 
-#mainNav ul, #mobileNavbar ul{
+#mainNav ul,
+#mobileNavbar ul {
     padding-left: 0;
     margin: 0 0 1rem 0;
     padding: 0 2rem;
 }
 
-#mainNav li, #mobileNavbar li{
+#mainNav li,
+#mobileNavbar li {
     list-style-type: none;
     text-emphasis: none;
     text-decoration: none;
@@ -123,7 +118,8 @@ nav{
 
 }
 
-#mainNav a, #mobileNavbar a{
+#mainNav a,
+#mobileNavbar a {
     text-emphasis: none;
     text-decoration: none;
     color: white;
@@ -131,7 +127,7 @@ nav{
     padding: 1.2rem .6rem;
     padding-left: .8rem;
     font-size: 1.3rem;
-    
+
 }
 
 ul#orderSublink li {
@@ -140,26 +136,26 @@ ul#orderSublink li {
 
 
 //Slider settings
-
-
 .slider img {
     width: 100%;
 }
 
 .slider a {
-color: black;
-text-decoration: none;
-    
+    color: black;
+    text-decoration: none;
+
 }
 
-.slider h2{
+.slider h2 {
     font-size: 1.2rem;
 }
 
-picture h2, h5, p{
+picture h2,
+h5,
+p {
     margin: 0 0 0 0;
     padding: .2rem;
-    
+
 }
 
 picture p {
@@ -168,73 +164,74 @@ picture p {
 
 // Info cards
 
-main{
+main {
     border-top: 1px block solid;
 }
 
-.inner, .outer {
+.inner,
+.outer {
     width: 16rem;
     height: 12rem;
     margin: 0 auto;
-    
+
 }
 
-.inner{
- transition: ease-in .2s;
- background-color: #002F54;
- opacity: 1;
- position: absolute;
- margin: 0 0 0 0;
- z-index: 49;
- border-bottom: 4px dashed white;
- border-right: 1px dashed white;
- border-top: 1px dashed white;
- border-left: 1px dashed white;
- 
+.inner {
+    transition: ease-in .2s;
+    background-color: #002F54;
+    opacity: 1;
+    position: absolute;
+    margin: 0 0 0 0;
+    z-index: 49;
+    border-bottom: 4px dashed white;
+    border-right: 1px dashed white;
+    border-top: 1px dashed white;
+    border-left: 1px dashed white;
+
 }
 
-.inner h3{
+.inner h3 {
     padding: 3rem 3rem 0 1rem;
 }
 
-.outer{
-position: relative;
-color: white;
-text-align: center;
+.outer {
+    position: relative;
+    color: white;
+    text-align: center;
 
 }
 
-.outer h3{
-    padding: .2rem 1rem; 
-    
+.outer h3 {
+    padding: .2rem 1rem;
+
 }
 
-.inner p{
+.inner p {
     color: #002F54;
     font-size: .6rem;
     text-align: left;
     margin: 0 .5rem 0 .5rem;
-    
+
 }
 
 .inner:hover {
     background-color: rgba(0, 0, 0, 0.589);
     transition: linear .5s;
-    color:white;
+    color: white;
 }
 
 #hoverP {
-    color:white ;
+    color: white;
     transition: linear .5s;
-    
+
 }
 
-#hoverP p{
+#hoverP p {
     color: white;
     background-color: rgba(0, 0, 0, 0.781);
 }
 
-.outer button{
+.outer button {
     opacity: 0;
     background-color: #002F54;
     color: white;
@@ -243,9 +240,6 @@ text-align: center;
     padding: .3rem 3rem;
     font-size: 1rem;
     margin-top: 1rem;
-    // position: absolute;
-    // bottom: 1rem;
-    // left: 1.7rem;
     cursor: pointer;
 }
 
@@ -253,49 +247,117 @@ text-align: center;
     width: 100%;
 }
 
-#cardADiv{
+#cardADiv {
     background: url(/Capstone/assets/dbz3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 16rem;
     height: 12rem;
-    
-    
+
+
 }
 
-#cardBDiv{
+#cardBDiv {
     background: url(/Capstone/assets/screenshot2.gif);
     background-size: cover;
     background-repeat: no-repeat;
     width: 16rem;
     height: 12rem;
     margin-top: 1rem;
-    
+
 }
+
+//Entry settings
+#display {
+    h1 {
+        font-size: 1.15rem;
+        margin-bottom: 0;
+        text-decoration: underline;
+    }
+
+    h2 {
+        font-size: .75rem;
+        margin-top: .2rem;
+    }
+
+    .mainImg {
+        width: 100%;
+    }
+
+    .detailDiv {
+        display: flex;
+    }
+
+    .detailTitles,
+    .detailInfo {
+        list-style-type: none;
+        padding-left: 0;
+        font-size: .7rem;
+        flex-basis: 50%;
+        border-top: 1px black solid;
+    }
+
+    .detailTitles li,
+    .detailInfo li {
+        padding: .2rem 0;
+        border-bottom: 1px solid black;
+    }
+
+    a {
+        text-emphasis: none;
+        text-decoration: none;
+        color: black;
+    }
+
+    .entryButton {
+        background-color: #002F54;
+        color: white;
+        width: 100%;
+        border-radius: .5rem;
+        padding: .3rem 1rem;
+        text-align: center;
+        margin: .2rem 0;
+    }
+
+    .screenshotImg {
+        width: 100%;
+    }
+
+    .wallpaperDiv figure {
+        margin: 0;
+    }
+
+    .wallpaperDiv img {
+        width: 100%;
+    }
+
+}
+
+
 
 //footer items
 
-div#footerWrapper{
-background-color: #002F54;
-color: white;
-text-align: center;
-margin-top: 2rem;
+div#footerWrapper {
+    background-color: #002F54;
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
 }
 
-footer div{
-    display:flex;
+footer div {
+    display: flex;
     justify-content: space-around;
 }
 
-footer div p{
+footer div p {
     font-size: 2rem;
 }
 
-footer{
+footer {
     padding: .6rem .5rem;
 }
 
-footer p{
+footer p {
     padding: 0;
     margin: 0;
     font-size: .6rem;

@@ -1,38 +1,37 @@
-
 main,
 footer {
-    padding-right: 2%;
-    padding-left: 2%;
+  padding-right: 2%;
+  padding-left: 2%;
 }
 
-#logoDiv{
+#logoDiv {
   width: 80%;
   padding-top: .3rem;
 }
 
-#mobileTop a{
+#mobileTop a {
   font-size: 3rem;
 }
 
-#icon{
-  padding: 1rem 1rem .3rem .5rem!important;
-  
+#icon {
+  padding: 1rem 1rem .3rem .5rem !important;
+
 }
 
 
 
-#searchLi{
+#searchLi {
   width: 80%;
   padding-top: 1rem;
   padding-left: 1rem;
   border: none !important;
 }
 
-.searchTermM{
+.searchTermM {
   font-size: 1.5rem;
 }
 
-.searchButtonM{
+.searchButtonM {
   font-size: 1rem;
 }
 
@@ -49,17 +48,129 @@ footer {
   overflow: hidden;
 }
 
-picture div{
+picture div {
   padding: 1rem;
 }
 
-#landingMain{
+#landingMain {
   display: flex;
-  
+
 }
 
-#cardADiv, #cardBDiv {
+#cardADiv,
+#cardBDiv {
   margin-bottom: 1rem;
   margin-top: 0;
 }
 
+//Entry settings
+
+#display {
+  h1 {
+    font-size: 1.2rem;
+  }
+}
+
+.infoDiv {
+  grid-area: detail;
+
+}
+
+.descDiv {
+  grid-area: description;
+
+  h3 {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+}
+
+// .screenDiv {
+//   grid-area: screenshots;
+// }
+
+.wallpaperDiv {
+  grid-area: wallpaper;
+}
+
+#display {
+  display: grid;
+  gap: .5rem;
+  grid-template-areas:
+    "detail description"
+    "wallpaper wallpaper";
+
+
+
+  h2 {
+    font-size: .75rem;
+    margin-top: .2rem;
+  }
+
+  .mainImg {
+    width: 100%;
+  }
+
+  .detailDiv {
+    display: flex;
+
+  }
+
+  .detailTitles,
+  .detailInfo {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: .7rem;
+    flex-basis: 50%;
+    border-top: 1px black solid;
+  }
+
+  .detailTitles li,
+  .detailInfo li {
+    padding: .2rem 0;
+    border-bottom: 1px solid black;
+  }
+
+  a {
+    text-emphasis: none;
+    text-decoration: none;
+    color: black;
+  }
+
+  .entryButton {
+    background-color: #002F54;
+    color: white;
+    width: 100%;
+    border-radius: .5rem;
+    padding: .3rem 1rem;
+    text-align: center;
+    margin: .2rem 0;
+  }
+
+  .screenshotImg {
+    width: 100%;
+  }
+
+  .wallpaperDiv figure {
+    margin: 0;
+  }
+
+  .wallpaperDiv img {
+    width: 100%;
+  }
+
+}
+
+
+
+
+.screenDiv {
+  display: flex;
+  flex-basis: 30%;
+  justify-content: space-evenly;
+
+}
+
+.screenDiv img {
+  max-width: 31%;
+}

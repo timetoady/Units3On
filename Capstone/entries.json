@@ -1,0 +1,96 @@
+{
+    "entries": [{
+            "title": "Secret of Mana -- Relocalized",
+            "type": "hack",
+            "gameTitle": "Secret of Mana",
+            "author": "Timbo",
+            "picture": "4324titlescreen.png",
+            "category": "improvement",
+            "platform": "SNES",
+            "patchingInfo": "No-Header (SNES)",
+            "genre": "Action RPG",
+            "mods": "G,T,GP",
+            "patchVer": "1.7",
+            "releaseDate": "21 March 2019",
+            "readme": "http://www.romhacking.net/hacks/snes/patches/4324readme.txt",
+            "downloads": "5477",
+            "lastMod": "22 March 2019",
+            "description": "About Relocalized: \n\n Secret of Mana - Relocalized focuses on updating, uncensoring, and “relocalizing” gameplay, graphical, and text (both script and non-script) elements of Secret of Mana \n\n Death Machine: AKA Kettle Kin gets restored to its full uncensored chainsaw wielding glory. Not only is this a graphical hack, it also rewrites the its AI to perform just as it did in the original Japanese release. \n\nTeleportation Circles: When Square released this game in 1993 Nintendo of America had strict policies against religious imagery appearing in its titles. The six-pointed stars in the teleportation circles were reduced to triangles. This hack restores them to their original appearance.\n\nTitle Screen Background: When Square ported this game over to English, they butchered the original background image. Because of some graphical problems they cropped the image of the full Mana Tree at its roots and expanded it. The result is a blurry pixelated mess. Relocalized restores the original image.\n\nOpening Text Crawl: Relocalized updates the opening text crawl to that of the superior HD version.\n\nMixed Case Character Names: This features adds lowercase letters to the character naming screen.\n\nRelocalization: The titular feature. This hack takes the game’s outdated, awkward, and inaccurate text and script elements and localizes them differently. Just like with FuSoYa’s hack before it, Relocalized holds true to the style of beloved 90’s Squaresoft translator, Ted Woolsey.",
+            "romISOinfo": "No-Intro Name: Secret of Mana (USA) \n (No-Intro version 20130701-030720) \nROM/File SHA-1: 8133041A363E3CC68CEDEF4 \n0B49B6D20D03C505D",
+            "credits": "",
+            "screenshot1": "SoM3.png",
+            "screenshot2": "SoM4.png",
+            "screenshot3": "SoM5.png",
+            "wallpaper1": "SoM1.jpg",
+            "wallpaper2": "SoM2.jpg"
+        },
+        {
+            "title": "Dragon Ball Z: The Legend of the Super Saiyan",
+            "type": "translation",
+            "gameTitle": "Dragon Ball Z: Super Saiya Densetsu",
+            "author": "Klepto Software",
+            "picture": "dbzPic.png",
+            "category": "full translation",
+            "platform": "SNES",
+            "patchingInfo": "No-Header (SNES)",
+            "genre": "Role Playing",
+            "mods": "none",
+            "patchVer": "1.02",
+            "releaseDate": "17 February 2016",
+            "readme": "http://www.romhacking.net/hacks/snes/patches/4324readme.txt",
+            "downloads": "76531",
+            "lastMod": "18 February 2016",
+            "description": "After a long period of inactivity, this translation is finally finished! Everything in the game is complete, including the intro and endings. Release 1.02 fixes bugs reported in the 2011 complete release. Have fun! It should also be noted that this patch will only work on version 1.1 of the ROM with a header.",
+            "romISOinfo": "No-Intro Name: Secret of Mana (USA) \n (No-Intro version 20130701-030720) \nROM/File SHA-1: 8133041A363E3CC68\nCEDEF40B49B6D20D03C505D",
+            "credits": "",
+            "screenshot1": "dbzScreen1.png",
+            "screenshot2": "dbzScreen2.png",
+            "screenshot3": "dbzScreen3.png",
+            "wallpaper1": "DBZ1.webp",
+            "wallpaper2": "DBZ2.jpg"
+        },
+        {
+            "title": "Chrono Trigger+",
+            "type": "hack",
+            "gameTitle": "Chrono Trigger",
+            "author": "ThegreatBen",
+            "picture": "ctTitle.png",
+            "category": "improvement",
+            "platform": "SNES",
+            "patchingInfo": "No-Header (SNES)",
+            "genre": "Role Playing",
+            "mods": "S,L,T,GP",
+            "patchVer": "2.4",
+            "releaseDate": "26 March 2019",
+            "readme": "http://www.romhacking.net/hacks/snes/patches/3691readme.txt",
+            "downloads": "10795",
+            "lastMod": "26 March 2019",
+            "description": "This hack adds a ton of cut content back into the game, allows access to previously unexplorable areas, fixes some bugs and offers some options to remove the linearity from the game. Full list of changes in the readme.\n\nIn addition 1999 is fully explorable and offers tons of stuff to do. As well as more Easter eggs and quality of life improvements.\n\nMore stuff carries over like names money, fair prizes and cats.\n\nThe optional patches are explained in the readme.",
+            "romISOinfo": "No-Intro Name: Chrono Trigger (USA) - Headerless\n(No-Intro version 20130701-030720)\nROM/File SHA-1 \n DE5822F4F2F7A55ACB8\n926D4C0EAA63D5D989312\nROM/File CRC32: 2D206BF7\nROM/File size: 4096kb",
+            "credits": "",
+            "screenshot1": "ctScreen1.png",
+            "screenshot2": "ctScreen2.png",
+            "screenshot3": "ctScreen3.png",
+            "wallpaper1": "chrono1.jpg",
+            "wallpaper2": "chrono3.jpg"
+        },
+
+        {
+            "name": "Hilton",
+            "rooms": "15",
+            "gym": "Yes",
+            "roomTypes": ["California King", "Double Queen", "Double-Double"],
+            "address": "123 Rich Guy LN",
+            "address2": " Gone, AL 99999",
+            "picture": "hotel4.jpg",
+            "phoneNum": "+1-385-555-9101"
+        }
+
+
+
+
+    ]
+
+
+
+}

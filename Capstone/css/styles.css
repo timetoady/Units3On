@@ -418,7 +418,7 @@ header {
   width: 100%; }
 
 #icon {
-  padding: 0.6rem 0.6rem 0.4rem 0.5rem !important; }
+  padding: .6rem .6rem .4rem .5rem !important; }
 
 .searchTermM {
   font-size: 1rem;
@@ -470,12 +470,14 @@ nav {
   z-index: 100;
   height: 100vh; }
 
-#mainNav ul, #mobileNavbar ul {
+#mainNav ul,
+#mobileNavbar ul {
   padding-left: 0;
   margin: 0 0 1rem 0;
   padding: 0 2rem; }
 
-#mainNav li, #mobileNavbar li {
+#mainNav li,
+#mobileNavbar li {
   list-style-type: none;
   text-emphasis: none;
   text-decoration: none;
@@ -483,7 +485,8 @@ nav {
   margin-top: -1px;
   border: rgba(158, 158, 158, 0.479) dotted 1px; }
 
-#mainNav a, #mobileNavbar a {
+#mainNav a,
+#mobileNavbar a {
   text-emphasis: none;
   text-decoration: none;
   color: white;
@@ -505,7 +508,9 @@ ul#orderSublink li {
 .slider h2 {
   font-size: 1.2rem; }
 
-picture h2, h5, p {
+picture h2,
+h5,
+p {
   margin: 0 0 0 0;
   padding: .2rem; }
 
@@ -515,7 +520,8 @@ picture p {
 main {
   border-top: 1px block solid; }
 
-.inner, .outer {
+.inner,
+.outer {
   width: 16rem;
   height: 12rem;
   margin: 0 auto; }
@@ -590,6 +596,47 @@ main {
   width: 16rem;
   height: 12rem;
   margin-top: 1rem; }
+
+#display h1 {
+  font-size: 1.15rem;
+  margin-bottom: 0;
+  text-decoration: underline; }
+#display h2 {
+  font-size: .75rem;
+  margin-top: .2rem; }
+#display .mainImg {
+  width: 100%; }
+#display .detailDiv {
+  display: flex; }
+#display .detailTitles,
+#display .detailInfo {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: .7rem;
+  flex-basis: 50%;
+  border-top: 1px black solid; }
+#display .detailTitles li,
+#display .detailInfo li {
+  padding: .2rem 0;
+  border-bottom: 1px solid black; }
+#display a {
+  text-emphasis: none;
+  text-decoration: none;
+  color: black; }
+#display .entryButton {
+  background-color: #002F54;
+  color: white;
+  width: 100%;
+  border-radius: .5rem;
+  padding: .3rem 1rem;
+  text-align: center;
+  margin: .2rem 0; }
+#display .screenshotImg {
+  width: 100%; }
+#display .wallpaperDiv figure {
+  margin: 0; }
+#display .wallpaperDiv img {
+  width: 100%; }
 
 div#footerWrapper {
   background-color: #002F54;
@@ -830,7 +877,7 @@ footer p {
     font-size: 3rem; }
 
   #icon {
-    padding: 1rem 1rem 0.3rem 0.5rem !important; }
+    padding: 1rem 1rem .3rem .5rem !important; }
 
   #searchLi {
     width: 80%;
@@ -859,9 +906,74 @@ footer p {
   #landingMain {
     display: flex; }
 
-  #cardADiv, #cardBDiv {
+  #cardADiv,
+  #cardBDiv {
     margin-bottom: 1rem;
-    margin-top: 0; } }
+    margin-top: 0; }
+
+  #display h1 {
+    font-size: 1.2rem; }
+
+  .infoDiv {
+    grid-area: detail; }
+
+  .descDiv {
+    grid-area: description; }
+    .descDiv h3 {
+      margin-top: 1rem;
+      font-size: 1rem; }
+
+  .wallpaperDiv {
+    grid-area: wallpaper; }
+
+  #display {
+    display: grid;
+    gap: .5rem;
+    grid-template-areas: "detail description" "wallpaper wallpaper"; }
+    #display h2 {
+      font-size: .75rem;
+      margin-top: .2rem; }
+    #display .mainImg {
+      width: 100%; }
+    #display .detailDiv {
+      display: flex; }
+    #display .detailTitles,
+    #display .detailInfo {
+      list-style-type: none;
+      padding-left: 0;
+      font-size: .7rem;
+      flex-basis: 50%;
+      border-top: 1px black solid; }
+    #display .detailTitles li,
+    #display .detailInfo li {
+      padding: .2rem 0;
+      border-bottom: 1px solid black; }
+    #display a {
+      text-emphasis: none;
+      text-decoration: none;
+      color: black; }
+    #display .entryButton {
+      background-color: #002F54;
+      color: white;
+      width: 100%;
+      border-radius: .5rem;
+      padding: .3rem 1rem;
+      text-align: center;
+      margin: .2rem 0; }
+    #display .screenshotImg {
+      width: 100%; }
+    #display .wallpaperDiv figure {
+      margin: 0; }
+    #display .wallpaperDiv img {
+      width: 100%; }
+
+  .screenDiv {
+    display: flex;
+    flex-basis: 30%;
+    justify-content: space-evenly; }
+
+  .screenDiv img {
+    max-width: 31%; } }
 @media only screen and (min-width: 1025px) {
   main,
   header,
@@ -971,12 +1083,14 @@ footer p {
   footer {
     text-align: center; }
 
-  .inner, .outer {
+  .inner,
+  .outer {
     width: 20rem;
     height: 15rem;
     margin: 0 auto; }
 
-  #cardADiv, #cardBDiv {
+  #cardADiv,
+  #cardBDiv {
     width: 20rem;
     height: 15rem; }
 
@@ -991,4 +1105,8 @@ footer p {
     margin-bottom: 1rem; }
 
   .inner p {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+
+  #display {
+    gap: 1rem;
+    grid-template-areas: "detail description description" "wallpaper wallpaper wallpaper"; } }

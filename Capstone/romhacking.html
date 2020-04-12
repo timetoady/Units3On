@@ -10,7 +10,7 @@
 </head>
 
 <body>
-
+    <input type="hidden" id="entryID" value="0">
     <div id=headerWrapper>
         <header>
             <div id="logoDiv">
@@ -83,18 +83,35 @@
                 </div>
             </picture>
         </a>
-        <picture>
-            <source srcset="/Capstone/assets/DBZ2small.jpg" media="(max-width: 28.12rem)">
-            <source srcset="/Capstone/assets/DBZ2big.jpg" media="(min-width: 28.12rem)">
-            <img src="/Capstone/assets/DBZ2big.jpg" alt="Dragon Ball Z: Legend of the Super Saiyan">
-            <div>
-                <h2>Dragon Ball Z: Legend of the Super Saiyan</h2>
-                <h5>Translation</h5>
-                <p>Everything in the game is complete, including the intro and endings. Release 1.02 fixes bugs reported
-                    in the 2011 complete release. Have fun!</p>
-            </div>
-        </picture>
+        <a href="/Capstone/exampleEntry2.html">
+            <picture>
+                <source srcset="/Capstone/assets/DBZ2small.jpg" media="(max-width: 28.12rem)">
+                <source srcset="/Capstone/assets/DBZ2big.jpg" media="(min-width: 28.12rem)">
+                <img src="/Capstone/assets/DBZ2big.jpg" alt="Dragon Ball Z: Legend of the Super Saiyan">
+                <div>
+                    <h2>Dragon Ball Z: Legend of the Super Saiyan</h2>
+                    <h5>Translation</h5>
+                    <p>Everything in the game is complete, including the intro and endings. Release 1.02 fixes bugs
+                        reported
+                        in the 2011 complete release. Have fun!</p>
+                </div>
+            </picture>
+        </a>
 
+        <a href="/Capstone/exampleEntry3.html">
+            <picture>
+                <source srcset="/Capstone/assets/chronoSmall.jpg" media="(max-width: 28.12rem)">
+                <source srcset="/Capstone/assets/chronoBig.jpg" media="(min-width: 28.12rem)">
+                <img src="/Capstone/assets/chronoBig.jpg" alt="Chrono Trigger+">
+                <div>
+                    <h2>Chrono Trigger+</h2>
+                    <h5>Hack</h5>
+                    <p>This hack adds a ton of cut content back into the game, allows access to previously unexplorable
+                        areas, fixes some bugs and offers some options to remove the linearity from the game. Full list
+                        of changes in the readme.</p>
+                </div>
+            </picture>
+        </a>
 
     </div>
 
@@ -112,7 +129,7 @@
         </div>
 
         <div class="outer" id="cardBDiv">
-            
+
             <div id="cardB" class="inner" onmouseover="fadeFunction2()" onmouseout="fadeFunction2()">
                 <h3>Contribute</h3>
                 <p class="innerP">Go here to jump right into contributing your hacks, translations, and homebrew. New to
@@ -128,7 +145,13 @@
 
     <div id="footerWrapper">
         <footer>
-            <div><p><ion-icon name="logo-facebook"></ion-icon> <ion-icon name="logo-twitter"></ion-icon> <ion-icon name="logo-instagram"></ion-icon></p></div>
+            <div>
+                <p>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </p>
+            </div>
             <p>©2020 RHDN by TimeToady. All Rights Reserved.</p>
         </footer>
     </div>

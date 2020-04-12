@@ -1,15 +1,5 @@
-// function myFunction() {
-//     let x = document.querySelector("#myLinks");
-//     let hamburger = document.querySelector("#menu");
-//     if (x.style.display === "block") {
-//       x.style.display = "none";
-//       hamburger.setAttribute("name", "menu");
-//     } else {
 
-//       x.style.display = "block";
-//       hamburger.setAttribute("name", "close");
-//     }
-//   }
+//Items for main nav, mobile nav, and submenu
 let mover = document.querySelector("#mobileNavbar");
 let origin = document.querySelector("#origin");
 let hamburger = document.querySelector("#menu");
@@ -19,6 +9,7 @@ let sectionSubDiv = document.querySelector("#sectionSubMenu");
 let sectionSub = document.querySelector("#orderSublink");
 let sectionLi = document.querySelector("#sectionLi");
 
+//Main event handler for mobile menu
 hamburger.addEventListener("click", () => {
   if (window.screen.width <= 1024) {
     mover.appendChild(links);
@@ -39,6 +30,7 @@ hamburger.addEventListener("click", () => {
   }
 });
 
+//Sub menu function
 function subMenu() {
   if (sectionSub.style.display === "block") {
     sectionSub.style.display = "none";
@@ -47,14 +39,14 @@ function subMenu() {
   }
 }
 
+//Sub menu even listener
 sectionLi.addEventListener("click", () => {
   if (window.screen.width <= 1024) {
-    console.log("Click received");
     subMenu();
   }
 });
 
-
+//Customized button faders
 let innerButton1 = document.querySelector("#boxButton1");
 let innerButton2 = document.querySelector("#boxButton2");
 let cardA = document.querySelector("#cardA");
@@ -62,24 +54,25 @@ let cardB = document.querySelector("#cardB");
 
 function fadeFunction1() {
   if (cardA.id === "hoverP") {
-    cardA.removeAttribute('id', 'hoverP');
+    cardA.removeAttribute("id", "hoverP");
     innerButton1.style.opacity = "0";
-  } else{
-    cardA.setAttribute('id', 'hoverP');
+  } else {
+    cardA.setAttribute("id", "hoverP");
     innerButton1.style.opacity = "1";
   }
-};
+}
 
 function fadeFunction2() {
   if (cardB.id === "hoverP") {
-    cardB.removeAttribute('id', 'hoverP');
+    cardB.removeAttribute("id", "hoverP");
     innerButton2.style.opacity = "0";
-  } else{
-    cardB.setAttribute('id', 'hoverP');
+  } else {
+    cardB.setAttribute("id", "hoverP");
     innerButton2.style.opacity = "1";
   }
-};
+}
 
+//reload on resize to make sure menus update
 window.onresize = function () {
   location.reload();
 };
