@@ -73,6 +73,6 @@ function fadeFunction2() {
 }
 
 //reload on resize to make sure menus update
-window.onresize = function () {
-  location.reload();
-};
+// window.onresize = function () {
+//   location.reload();
+// };

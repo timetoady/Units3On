@@ -1096,7 +1096,7 @@ footer p {
 
   #logoDiv {
     width: 20%;
-    padding: 0;
+    padding: .2rem 0 0 0;
     margin: 0; }
 
   header {
@@ -1115,7 +1115,8 @@ footer p {
   #mainNav ul {
     display: flex;
     justify-content: space-between;
-    margin: 0; }
+    margin: 0;
+    padding: 0 .2rem; }
 
   #mainNav li {
     margin: 0;
@@ -1171,11 +1172,13 @@ footer p {
     width: 100%; }
 
   li#searchLi {
-    width: 20%;
-    padding-top: 1rem; }
+    width: 16%;
+    padding-top: 1rem;
+    padding: 1rem 1rem 0 0; }
 
   .searchTermM {
-    font-size: .8rem; }
+    font-size: .8rem;
+    margin-left: .2rem; }
 
   .searchButtonM {
     font-size: .6rem; }
