@@ -14,8 +14,9 @@
     <div id=headerWrapper>
         <header>
             <div id="logoDiv">
-                <a href="/Capstone/romhacking.html"><img srcset="/Capstone/assets/romHackinglogo.png, /Capstone/assets/romHackinglogo@2x.png 2x, /Capstone/assets/romHackinglogo@3x.png 3x"
-                    src="/Capstone/assets/romHackinglogo.png" alt="ROMhacking.net"></a>
+                <a href="/Capstone/romhacking.html"><img
+                        srcset="/Capstone/assets/romHackinglogo.png, /Capstone/assets/romHackinglogo@2x.png 2x, /Capstone/assets/romHackinglogo@3x.png 3x"
+                        src="/Capstone/assets/romHackinglogo.png" alt="ROMhacking.net"></a>
             </div>
 
 
@@ -27,38 +28,41 @@
                     </a>
                 </div>
 
-                    <ul id="myLinks">
-                        <li id="sectionLi">
-                        <a href="#"><ion-icon class="icon" name="game-controller"></ion-icon></ion-icon>Sections</a>
-                                <ul id="orderSublink">
-                                <li><a href="http://www.romhacking.net/utilities/" target="_blank">Utilities</a></li>
-                                <li><a href="#">Translations</a></li>
-                                <li><a href="#">ROM Hacks</a></li>
-                                <li><a href="#">Homebrew</a></li>
-                                <li><a href="#">Fonts</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contribute.html">
-                                <ion-icon class="icon" name="document-attach"></ion-icon>
-                                </ion-icon>Submission
-                            </a></li>
-                        <li><a href="http://www.romhacking.net/submissions/exthacksubmissions/" target="_blank">
-                                <ion-icon class="icon" name="alert"></ion-icon>
-                                </ion-icon>Latest
-                            </a></li>
-                        <li><a href="http://www.romhacking.net/forum/" target="_blank">
-                                <ion-icon class="icon " name="call"></ion-icon>Community
-                            </a></li>
-                        <li><a href="about.html">
-                                <ion-icon class="icon" name="document-attach"></ion-icon>
-                                </ion-icon>About & Help
-                            </a></li>
-                        <li id="searchLi"> <input type="text" class="searchTermM" placeholder="Search">
-                            <button type="submit" class="searchButtonM">
-                                <ion-icon name="search"></ion-icon>
-                            </button></li>
-                    </ul>
-             
+                <ul id="myLinks">
+                    <li id="sectionLi">
+                        <a href="#">
+                            <ion-icon class="icon" name="game-controller"></ion-icon>
+                            </ion-icon>Sections
+                        </a>
+                        <ul id="orderSublink">
+                            <li><a href="http://www.romhacking.net/utilities/" target="_blank">Utilities</a></li>
+                            <li><a href="#">Translations</a></li>
+                            <li><a href="#">ROM Hacks</a></li>
+                            <li><a href="#">Homebrew</a></li>
+                            <li><a href="#">Fonts</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contribute.html">
+                            <ion-icon class="icon" name="document-attach"></ion-icon>
+                            </ion-icon>Submission
+                        </a></li>
+                    <li><a href="http://www.romhacking.net/submissions/exthacksubmissions/" target="_blank">
+                            <ion-icon class="icon" name="alert"></ion-icon>
+                            </ion-icon>Latest
+                        </a></li>
+                    <li><a href="http://www.romhacking.net/forum/" target="_blank">
+                            <ion-icon class="icon " name="call"></ion-icon>Community
+                        </a></li>
+                    <li><a href="about.html">
+                            <ion-icon class="icon" name="document-attach"></ion-icon>
+                            </ion-icon>About & Help
+                        </a></li>
+                    <li id="searchLi"> <input type="text" class="searchTermM" placeholder="Search">
+                        <button type="submit" class="searchButtonM">
+                            <ion-icon name="search"></ion-icon>
+                        </button></li>
+                </ul>
+
 
             </nav>
 
@@ -73,35 +77,148 @@
 
     <main>
 
-<!-- notes 
+        <h1>Submission form</h1>
+        <h3>Fill out the form below to contribute your translation or game hack.</h3>
+        <form method="GET" action="thanks.html">
+            <fieldset>
+                <legend>
+                    Top Info
+                </legend>
+                <label>Title of Hack/Translation<input type="text" name="title" required></label>
+                <label id="type">Type</label>
+                <label class="aRadio"><input type="radio" name="type" value="hack" checked>Hack</label>
+                <label class="aRadio"><input type="radio" name="type" value="translation">Translation</label>
+                <label>Game Title*<input type="text" name="gameTitle" required></label>
+                <label>Author*<input type="text" name="author" required></label>
+                <label>Main photo<input type="file" name="mainPhoto" ></label>
+            </fieldset>
 
-            "title": 
-            "type": 
-            "gameTitle": 
-            "author": 
-            "picture": 
+            <fieldset>
+                <legend>
+                    Hack Details
+                </legend>
+                <label for="category"><span class="formhelp" data-tooltip="" ></span>Category*</label>
+                <select id="category" name="category" required>
+                    <option value="">None Selected</option>
+                    <option value="6">Addendum</option>
+                    <option value="4">Bug Fix</option>
+                    <option value="1">Complete</option>
+                    <option value="5">Improvement</option>
+                    </select>
+                <label for="platform">Platform*</label>
+                <select id="platform" name="platform" required>
+                    <option value="">None Selected</option>
+                    <option value="46">3DO Interactive Multiplayer</option>
+                    <option value="26">Arcade</option>
+                    <option value="37">Atari 2600</option>
+                    <option value="42">Atari 5200</option>
+                    <option value="43">Atari 7800</option>
+                    <option value="28">Atari Jaguar</option>
+                    <option value="52">Atari Lynx</option>
+                    <option value="53">ColecoVision</option>
+                    <option value="14">Dreamcast</option>
+                    <option value="7">Family Computer Disk System</option>
+                    <option value="8">Game Boy</option>
+                    <option value="10">Game Boy Advance</option>
+                    <option value="19">MSX</option>
+                    <option value="25">Multi-Platform</option>
+                    <option value="15">Neo-Geo CD</option>
+                    <option value="16">Neo-Geo Pocket Color</option>
+                    <option value="51">Nintendo 3DS</option>
+                    <option value="27">Nintendo 64</option>
+                    <option value="23">Nintendo DS</option>
+                    <option value="1">Nintendo Entertainment System</option>
+                    <option value="33">Nintendo GameCube</option>
+                    <option value="24">Not Applicable</option>
+                    <option value="20">PC</option>
+                    <option value="45">PC Engine SuperGrafx</option>
+                    <option value="35">PC-6x01</option>
+                    <option value="2">PC-8x01</option>
+                    <option value="3">PC-98</option>
+                    <option value="6">PC-FX</option>
+                    <option value="50">Philips CD-i</option>
+                    <option value="17">PlayStation</option>
+                    <option value="18">PlayStation 2</option>
+                    <option value="47">PlayStation 3</option>
+                    <option value="44">PlayStation Portable</option>
+                    <option value="54">Playstation Vita</option>
+                    <option value="41">Pokémon mini</option>
+                    <option value="31">Sega 32X</option>
+                    <option value="29">Sega CD</option>
+                    <option value="12">Sega Game Gear</option>
+                    <option value="11">Sega Genesis</option>
+                    <option value="22">Sega Master System</option>
+                    <option value="13">Sega Saturn</option>
+                    <option value="34">SG-1000/SC-3000</option>
+                    <option value="9">Super Nintendo</option>
+                    <option value="4">Turbografx-16</option>
+                    <option value="5">Turbografx-CD</option>
+                    <option value="32">Virtual Boy</option>
+                    <option value="36">Wii</option>
+                    <option value="49">Wii U</option>
+                    <option value="21">Wonderswan</option>
+                    <option value="30">X68000</option>
+                    <option value="38">Xbox</option>
+                    <option value="48">Xbox 360</option>
+                    </select>
+                <label>Patching Info<input type="text" name="patch"></label>
+                <label for="genre">Genre</label>
+                <select id="genre" name="genre">
+                    <option value="">None Selected</option>
+                    <option value="1">Action</option>
+                    <option value="5">Action &gt; Beat 'Em Up</option>
+                    <option value="8">Action &gt; Fighting</option>
+                    <option value="11">Action &gt; Platformer</option>
+                    <option value="16">Action &gt; Shooter</option>
+                    <option value="24">Action Adventure</option>
+                    <option value="2">Adventure</option>
+                    <option value="3">Application</option>
+                    <option value="4">Boardgame</option>
+                    <option value="6">Card Game</option>
+                    <option value="7">Dating Sim</option>
+                    <option value="9">Game Creation</option>
+                    <option value="10">Other</option>
+                    <option value="12">Puzzle</option>
+                    <option value="13">Racing</option>
+                    <option value="14">Role Playing</option>
+                    <option value="23">Role Playing &gt; Action RPG</option>
+                    <option value="15">Screen Saver</option>
+                    <option value="22">Simulation</option>
+                    <option value="17">Sports</option>
+                    <option value="18">Strategy</option>
+                    <option value="19">Strategy &gt; Turn Based</option>
+                    <option value="20">Unknown</option>
+                    <option value="21">Visual Novel</option>
+                </select>
+                <label>Mods<input type="text" name="patch"></label>
+                <label>Patch Version<input type="number" name="patch"></label>
+                <label>Release Date<input type="date" name="date"></label>
+            </fieldset>
 
-            "category": 
-            "platform": 
-            "patchingInfo": 
-            "genre": 
-            "mods": 
-            "patchVer": 
-            "releaseDate": 
-            "readme": 
-            "lastMod": 
+            <fieldset>
+                <legend>
+                    Description/Screenshots
+                </legend>
+                <label for="story">Description</label>
 
-            "description": 
-            "romISOinfo": 
-            "screenshot1": 
-            "screenshot2": 
-            "screenshot3": 
+                <textarea id="description" name="description" rows="5" cols="30">Explain what your mod/hack does and what you hope people get out it.
+                </textarea>
+                <label>ROM/ISO information<input type="text" name="patch"></label>
+                <label>Screenshot 1<input type="file" name="screen1"></label>
+                <label>Screenshot 2<input type="file" name="screen2"></label>
+                <label>Screenshot 3<input type="file" name="screen3"></label>
+                <label>Wallpaper 1<input type="file" name="wallpaper1"></label>
+                <label>Wallpaper 2<input type="file" name="wallpaper2"></label>
+            </fieldset>
 
-            "wallpaper1": 
-            "wallpaper2": 
+            <button id="submitEntry">SUBMIT MY ENTRY</button>
 
 
--->
+
+
+        </form>
+
+
 
 
     </main>
@@ -110,8 +227,14 @@
 
     <div id="footerWrapper">
         <footer>
-            <div><p><ion-icon name="logo-facebook"></ion-icon> <ion-icon name="logo-twitter"></ion-icon> <ion-icon name="logo-instagram"></ion-icon></p></div>
-            <p>©2020 RHDN  by TimeToady. All Rights Reserved.</p>
+            <div>
+                <p>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </p>
+            </div>
+            <p>©2020 RHDN by TimeToady. All Rights Reserved.</p>
         </footer>
     </div>
 
