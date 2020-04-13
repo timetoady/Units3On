@@ -1110,7 +1110,8 @@ footer p {
     margin: 0; }
 
   #mainNav {
-    width: 80%; }
+    width: 80%;
+    margin-top: .1rem; }
 
   #mainNav ul {
     display: flex;
@@ -1198,7 +1199,11 @@ footer p {
     height: 15rem; }
 
   #landingMain {
-    margin: 2rem 2% 2rem 2%; }
+    margin: 2rem auto; }
+
+  .sliderDiv {
+    max-width: 75rem;
+    margin: 0 auto; }
 
   .outer button {
     padding: .2rem 1rem; }

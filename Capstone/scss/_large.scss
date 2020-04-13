@@ -45,6 +45,7 @@ header {
 
 #mainNav {
     width: 80%;
+    margin-top: .1rem;
 }
 
 #mainNav ul {
@@ -164,7 +165,12 @@ footer {
 }
 
 #landingMain {
-    margin: 2rem 2% 2rem 2%;
+    margin: 2rem auto;
+}
+
+.sliderDiv{
+    max-width: 75rem;
+    margin: 0 auto;
 }
 
 .outer button {
