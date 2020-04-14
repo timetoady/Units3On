@@ -971,7 +971,7 @@ footer p {
     padding-top: .3rem; }
 
   #mobileTop a {
-    font-size: 3rem; }
+    font-size: 3rem !important; }
 
   #icon {
     padding: 1rem 1rem .3rem .5rem !important; }
