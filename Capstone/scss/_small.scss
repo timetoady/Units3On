@@ -34,9 +34,7 @@ header {
     width: 100%;
 }
 
-#icon {
-    padding: .6rem .6rem .4rem .5rem !important;
-}
+
 
 .searchTermM {
     font-size: 1rem;
@@ -59,13 +57,6 @@ header {
 
 }
 
-#mobileTop {
-    color: white;
-    text-emphasis: none;
-    text-decoration: none;
-    font-size: 1.5rem;
-    padding: .05rem .5rem 0 0;
-}
 
 #myLinks {
     display: none;
@@ -130,6 +121,20 @@ nav {
     padding-left: .8rem;
     font-size: 1.3rem;
 
+}
+
+#mobileTop {
+    color: white;
+    text-emphasis: none;
+    text-decoration: none;
+    
+}
+
+
+#icon {
+  padding: .5rem .7rem 0 .5rem !important;
+  font-size: 1.9rem !important;
+ 
 }
 
 ul#orderSublink li {
@@ -466,6 +471,7 @@ div#footerWrapper {
 
 footer div {
     display: flex;
+    margin: 0 auto;
     justify-content: space-around;
 }
 
