@@ -75,7 +75,6 @@ function fadeFunction2() {
 //reload on resize to make sure menus update
 
 
-if (window.screen.width > 1024) {
-  window.onresize = function () {
-  location.reload();
-}};
+window.onresize = function () {
+  if (window.screen.width >= 1024) {location.reload()};
+};

@@ -203,50 +203,6 @@ fetch(apiURL)
   });
 
 
-  //Sub menu function
-function subMenu() {
-  if (sectionSub.style.display === "block") {
-    sectionSub.style.display = "none";
-  } else {
-    sectionSub.style.display = "block";
-  }
-}
-
-//Sub menu even listener
-sectionLi.addEventListener("click", () => {
-  if (window.screen.width <= 1024) {
-    subMenu();
-  }
-});
-
-//Customized button faders
-let innerButton1 = document.querySelector("#boxButton1");
-let innerButton2 = document.querySelector("#boxButton2");
-let cardA = document.querySelector("#cardA");
-let cardB = document.querySelector("#cardB");
-
-function fadeFunction1() {
-  if (cardA.id === "hoverP") {
-    cardA.removeAttribute("id", "hoverP");
-    innerButton1.style.opacity = "0";
-  } else {
-    cardA.setAttribute("id", "hoverP");
-    innerButton1.style.opacity = "1";
-  }
-}
-
-function fadeFunction2() {
-  if (cardB.id === "hoverP") {
-    cardB.removeAttribute("id", "hoverP");
-    innerButton2.style.opacity = "0";
-  } else {
-    cardB.setAttribute("id", "hoverP");
-    innerButton2.style.opacity = "1";
-  }
-}
-
-
-
   window.onresize = function () {
     if (window.screen.width >= 1024) {location.reload()};
 };
