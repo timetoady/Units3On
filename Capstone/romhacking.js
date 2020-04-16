@@ -11,7 +11,7 @@ let sectionLi = document.querySelector("#sectionLi");
 
 //Main event handler for mobile menu
 hamburger.addEventListener("click", () => {
-  if (window.screen.width <= 1024) {
+  if (window.innerWidth <= 1024) {
     mover.appendChild(links);
     sectionSub.style.display = "none";
     if (links.id === "open") {
@@ -41,7 +41,7 @@ function subMenu() {
 
 //Sub menu even listener
 sectionLi.addEventListener("click", () => {
-  if (window.screen.width <= 1024) {
+  if (window.innerWidth <= 1024) {
     subMenu();
   }
 });
@@ -72,12 +72,8 @@ function fadeFunction2() {
   }
 }
 
-//reload on resize to make sure menus update
-
+//reload on large screen resize to make sure menus update
 
 window.onresize = function () {
-  if (window.screen.width >= 1024) {
-    location.reload();
-    console.log("Reload triggered")
-  };
+  if (window.innerWidth >= 1024) {location.reload()};
 };

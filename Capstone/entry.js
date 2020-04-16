@@ -204,5 +204,5 @@ fetch(apiURL)
 
 
   window.onresize = function () {
-    if (window.screen.width >= 1024) {location.reload()};
+    if (window.innerWidth >= 1024) {location.reload()};
 };
