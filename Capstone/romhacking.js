@@ -15,7 +15,6 @@ hamburger.addEventListener("click", () => {
     mover.appendChild(links);
     sectionSub.style.display = "none";
     if (links.id === "open") {
-      console.log("It's TRUE!");
       sectionSub.style.display = "none";
       links.removeAttribute("id", "open");
       links.setAttribute("id", "closed");
@@ -24,6 +23,7 @@ hamburger.addEventListener("click", () => {
       links.removeAttribute("id", "closed");
       links.setAttribute("id", "open");
       hamburger.setAttribute("name", "close");
+    
     }
   } else {
     origin.appendChild(links);
@@ -72,8 +72,6 @@ function fadeFunction2() {
   }
 }
 
-//reload on large screen resize to make sure menus update
+//reload on resize to make sure menus update
 
-window.onresize = function () {
-  if (window.innerWidth >= 1024) {location.reload()};
-};
+window.onresize = function () {location.reload()};

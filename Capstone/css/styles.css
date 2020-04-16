@@ -421,7 +421,7 @@ header {
   font-size: 1rem;
   border-radius: .2rem;
   border: none;
-  width: 98%;
+  max-width: 97%;
   background-color: #FFF;
   padding: .2rem; }
 
@@ -433,7 +433,8 @@ header {
   border: none;
   background-color: white;
   margin-left: -2rem;
-  margin-bottom: -.2rem; }
+  margin-bottom: -.2rem;
+  min-width: 3%; }
 
 #myLinks {
   display: none; }
@@ -447,7 +448,8 @@ nav {
   position: absolute;
   width: 100%;
   transition: all ease-in 1s;
-  z-index: 100; }
+  z-index: 100;
+  overflow: hidden; }
 
 #closed {
   display: none;
@@ -498,6 +500,9 @@ nav {
 
 ul#orderSublink li {
   border: none; }
+
+ul#orderSublink a {
+  display: block; }
 
 .slider img {
   width: 100%; }
@@ -1111,7 +1116,7 @@ footer p {
 
   #mainNav {
     width: 80%;
-    margin-top: .1rem; }
+    margin-top: .25rem; }
 
   #mainNav ul {
     display: flex;
@@ -1179,7 +1184,8 @@ footer p {
 
   .searchTermM {
     font-size: .8rem;
-    margin-left: .2rem; }
+    margin-left: .2rem;
+    width: 90%; }
 
   .searchButtonM {
     font-size: .6rem; }
