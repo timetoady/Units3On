@@ -1,7 +1,7 @@
 
 //Items for main nav, mobile nav, and submenu
 let mover = document.querySelector("#mobileNavbar");
-let origin = document.querySelector("#origin");
+let origin = document.querySelector("#mainNav");
 let hamburger = document.querySelector("#menu");
 let links = document.querySelector("#myLinks");
 let origin2 = document.querySelector("#origin2");
@@ -76,5 +76,8 @@ function fadeFunction2() {
 
 
 window.onresize = function () {
-  if (window.screen.width >= 1024) {location.reload()};
+  if (window.screen.width >= 1024) {
+    location.reload();
+    console.log("Reload triggered")
+  };
 };
